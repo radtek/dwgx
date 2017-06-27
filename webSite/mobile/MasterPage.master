@@ -1,0 +1,367 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="mobile_MasterPage" %>
+
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+<title>肇庆国家高新区</title>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<link rel="apple-touch-icon" href="javascript:void(0)http://s2.i.dayoo.com/images/dayoo-icon.png"/>
+<link type="text/css" rel="stylesheet" href="css/style.css?v201603311553"/>
+<script type="text/javascript" name="baidu-tc-cerfication" src="j/lightapp.js#5a8333cad3703599b0b08067a9aa8f31">
+</script>
+<script src="../js/jquery-3.1.1.min.js"></script>
+
+<script type="text/javascript">
+<!--
+window.bd && bd._qdc && bd._qdc.init({app_id: '7a9d3a3cbd694233012dcb7f'});
+-->
+</script>
+
+
+</head>
+<body>
+
+<!-- side-nav end-->
+<div class="wrap"><!-- header -->
+<div class="header">
+<!--<h1   ><img src="images/index_logo.png" alt=""/></h1>-->
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0" >
+  <tr>
+    <td width="34%" rowspan="2" scope="row"     align="right"><img src="images/logo.png" width="30" height="44" /></td>
+
+    <td width="66%"  class="head_logo">肇庆国家高新区</td>
+  </tr>
+  <tr>
+    <td height="15"  class="head_logo_text">http://www.zqgx.gov.cn</td>
+  </tr>
+</table>
+
+
+
+<script type="text/javascript">
+<!--
+            (function(){document.write(unescape('%3Cdiv id="bdcs"%3E%3C/div%3E'));var bdcs = document.createElement('script');bdcs.type = 'text/javascript';bdcs.async = true;bdcs.src = 'http://znsv.baidu.com/customer_search/api/js?sid=18243173342061018572' + '&plate_url=' + encodeURIComponent(window.location.href) + '&t=' + Math.ceil(new Date()/3600000);var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(bdcs, s);})();
+            
+-->
+</script>
+
+ <a id="i_menu" class="menu-btn fdn" href="javascript:void(0)javascript:void(0);" target="_self">&#160;</a></div>
+
+<!-- header end-->
+<!-- nav -->
+<div class="nav">
+<ul>
+<!--<li><a href="javascript:void(0)../">新闻</a></li>-->
+
+<li><a href="index.aspx">首页</a></li>
+
+<li><a href="class.aspx?TypeId=2">新闻</a></li>
+<li><a href="Info.aspx?id=10">简介</a></li>
+
+<li><a href="Info.aspx?id=13">招商</a></li>
+
+<li><a href="class.aspx?TypeId=55">引智</a></li>
+<li><a href="class.aspx?TypeId=30">办事</a></li>
+
+
+</ul>
+</div>
+        <asp:ContentPlaceHolder id="CPH1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+
+
+
+<div class="bd">
+
+
+</div>
+</div>
+
+
+<style>
+/* subfoot-wrap */
+.hidden{display:none;}
+.subfoot-wrap{background-color: #ededed;}
+.subfoot-wrap .bd{width: 1000px;margin:0 auto;padding: 20px 0;}
+.subfoot-wrap .tag img{margin-top: 15px;width: 70px;height: 70px;}
+.subfoot-wrap .tab-menu-img img{margin: 0px 8px;width: 70px;height: 70px;display: inline-block;cursor: pointer;}
+/* showup */
+.newspopup,.collectpopup {z-index: 9999;}
+.footer-w1000{width: 1000px;margin: 0 auto;overflow: hidden;}
+.showup{position: fixed;left: 50%;top:50%;width: 500px;height: 200px;margin:-100px 0 0 -250px;padding: 10px;background-color: #fff;border-radius: 4px;z-index: 4;z-index: 9999;}
+.showup button {float: right;width: 16px;height: 16px;background: url(http://www.dayoo.com/public/c/2016/product/images/close.png) no-repeat center;border: 0;z-index: 9999;cursor: pointer;}
+.showup .review {height: 100%;width: 100%;overflow: hidden;}
+.showup .review span {position: relative;float: left;width: 300px;height: 142px;margin: 10px 0 0 20px;font-size: 16px;color: #000;line-height: 26px;overflow: auto;}
+.showup .review img {float: left;width: 160px;height: 160px;margin: 0 0 0 10px;}
+.showup .title {height: 22px;padding: 8px;border-bottom: 2px solid #100964;}
+.showup .title span {float: left;color: #100964;font-weight: bold;}
+.black {position: fixed;width:100%;height:100%;top: 0;left: 0; background-image:url(http://www.dayoo.com/public/c/2016/product/images/cover.png); z-index: 3;text-align: center;overflow: hidden;z-index: 9998;}
+.table-responsive{min-height: .01%;overflow-x: auto;}
+@media screen and (max-width:768px){
+    .footer-w1000{width: auto;}
+    .subfoot-wrap{width: 100%;padding: 0px;}
+    .subfoot-wrap .bd{width: auto;margin: 10px;padding: 10px 0;}
+    .subfoot-wrap .tab-menu-img img{margin: 10px;}
+}
+@media screen and (max-width:480px){
+    .subfoot-wrap .tab-menu a{font-size: 14px;}
+}
+</style>
+
+
+<script type="text/javascript">
+    function newsedit() {
+        $(".newspopup").removeClass('hidden');
+    };
+    function closenewsPopup() {
+        $(".newspopup").addClass('hidden');
+    };
+    function collectedit() {
+        $(".collectpopup").removeClass('hidden');
+    };
+    function closecollectPopup() {
+        $(".collectpopup").addClass('hidden');
+    };
+    function setPubilcDesc(type, qrcode, name, desc, link) {
+        var ismobiles = ismobile();
+        if (ismobiles['state'] && type == 2) {
+            window.open(link);
+            //$('.review').html('<img src="' + qrcode + '" alt="' + name + '"/><a href="javascript:void(0)'+link+'"><span>' + desc + '</span></a>');
+        } else {
+            $('.review').html('<img src="' + qrcode + '" alt="' + name + '"/><span>' + desc + '</span>');
+            showup(1);
+        }
+    }
+    function popup() {
+        $(".popup").css('display', 'block');
+    };
+    function closePopup() {
+        $('.popup').css('display', 'none');
+    };
+    function showup(count){
+        if (count == 1) {
+            $(".popup").css('display', 'block');
+        }
+    };
+    function ismobile() {
+        var sUserAgent = navigator.userAgent.toLowerCase();
+        var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+        var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+        var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+        var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+        var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+        var bIsAndroid = sUserAgent.match(/android/i) == "android";
+        var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+        var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+        if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+            //phone
+            if (bIsIpad || bIsIphoneOs) {
+                return {'state': true, 'type': 'ios'};
+            } else {
+                return {'state': true, 'type': 'Android'};
+            }
+        } else {
+            //pc
+            return {'state': false, 'type': 'pc'};
+        }
+    };
+</script>
+
+<!-- footer -->
+<div class="footer">Copyright © 肇庆国家高新区（粤ICP备09172506）</div>
+
+<!-- footer end-->
+<!-- footer-client -->
+<!--<div class="footer-client"><span><a class="wap-to-pc" href="../index.aspx">电脑版</a></span> | <span><a href="index.aspx">手机版</a></span></div>-->
+
+<!-- footer-client end-->
+</div>
+
+<script type="text/javascript" src="js/jquery-1.7.2.min.js">
+</script>
+
+<script type="text/javascript" src="js/jqthumb.min.js">
+</script>
+
+<script type="text/javascript" src="js/TouchSlide.1.1.js">
+</script>
+
+<script type="text/javascript" src="js/jquery.cookie.js">
+</script>
+
+<script type="text/javascript" src="js/jweixin-1.0.0.js">
+</script>
+
+<script type="text/javascript">
+<!--
+        TouchSlide({slideCell:"#focus",titCell:".hd ul",mainCell:".bd ul",effect:"leftLoop",autoPlay:true,autoPage:true});
+        TouchSlide({slideCell:"#section_tab_1",effect:"leftLoop"});
+        TouchSlide({slideCell:"#section_tab_2",effect:"leftLoop"});
+        TouchSlide({slideCell:"#section_tab_3",effect:"leftLoop"});
+        TouchSlide({slideCell:"#section_tab_4",effect:"leftLoop"});
+    
+-->
+</script>
+
+<script type="text/javascript">
+<!--
+        //nav toggle
+        $(function(){
+            $.each($('.news-pic'),function(i,obj){
+                if($(obj).attr("src").replace(/ /g,"") == ""){
+                    $(obj).parent().parent().css("display","none");
+                }
+            })
+            $(".nav-more-btn").toggle(function(){
+                $(this).addClass("open");
+                $(".nav_li").show();
+            },
+            function(){
+                $(this).removeClass("open");
+                $(".nav_li").hide();
+            });
+        });
+        //side-nav toggle
+        $(function(){
+            $("body").after('<div id="i_cover"><\/div>');
+            $("#i_cover").css({width:($(window).width()-110)+'px',height:$(window).height(),position:'fixed',top:'0px',left:'0px',zIndex:'999',display:'none'});
+            $("#i_cover").click(function(){
+                $("#i_cover").hide();
+                    $("#i_menu").removeClass("menu-act");
+                    $(".wrap").removeClass("showmenu");
+                    $(".side-nav").addClass("sidenavHid");
+            });
+            $("#i_menu").click(function(){
+                $("#i_cover").show();
+                $("#i_menu").addClass("menu-act");
+                $(".wrap").addClass("showmenu");
+                $(".side-nav").removeClass("sidenavHid");
+            });
+            //side-sub-nav show
+            $(".side-nav .hd").toggle(function(){
+                $(".side-nav .hd").removeClass("open");
+                $(this).addClass("open");
+                $(".side-nav .bd").hide();
+                $(this).next().show();
+            },function(){
+                $(this).removeClass("open");
+                $(".side-nav .bd").hide();
+            });
+        });
+        //焦点图片16:9比例裁剪
+        $(function() { 
+            $(".focus .bd li").each(function(){ 
+                $(this).css("height",Math.floor($(this).width()*9/16));
+            }); 
+            $('.focus .bd li img').jqthumb({
+                width: '100%',
+                height: '100%',
+                position: {
+                    x :'50%',
+                    y : '50%'
+                }
+            });
+        }); 
+    
+-->
+</script>
+
+<script type="text/javascript">
+<!--
+    $(function(){ 
+        $(".wap-to-pc").on("click",function(){
+            $.cookie('terminal',null,{domain:'baidu.com',path:'/'});
+            location.href = "http://www.baidu.com";
+        });
+    }); 
+    
+-->
+</script>
+
+<script type="text/javascript">
+<!--
+        $.ajax({
+            url: "http://mp.i.dayoo.com/zwgz/index.php?r=JsSdk/index",
+            dataType: 'jsonp',
+            error: function(){},
+            success: function(response){
+                if ( typeof response.timestamp != 'undefined' && typeof response.nonceStr != 'undefined' && typeof response.signature != 'undefined' ) {
+                    wx.config({
+                        debug: false,
+                        appId: response.appId,
+                        timestamp: response.timestamp,
+                        nonceStr: response.nonceStr,
+                        signature: response.signature,
+                        jsApiList: ['onMenuShareTimeline','onMenuShareAppMessage','onMenuShareQQ','onMenuShareWeibo']
+                    });
+                    wx.ready(function () {
+                        wx.onMenuShareTimeline({
+                            title: $('title').text(),
+                            link: window.location.href,
+                            imgUrl: "http://news.dayoo.com/public/c/100903/images/wechat-share.png"
+                        });
+                        wx.onMenuShareAppMessage({
+                            title: $('title').text(),
+                            desc: $("[name=description]").attr("content"),
+                            link: window.location.href,
+                            imgUrl: "http://news.dayoo.com/public/c/100903/images/wechat-share.png",
+                            type: '', 
+                            dataUrl: '' 
+                        });
+                        wx.onMenuShareQQ({
+                            title: $('title').text(),
+                            desc: $("[name=description]").attr("content"),
+                            link: window.location.href,
+                            imgUrl: "http://news.dayoo.com/public/c/100903/images/wechat-share.png"
+                        });
+                        wx.onMenuShareWeibo({
+                            title: $('title').text(),
+                            desc: $("[name=description]").attr("content"),
+                            link: window.location.href,
+                            imgUrl: "http://news.dayoo.com/public/c/100903/images/wechat-share.png"
+                        });
+                    });
+                }
+            }
+        });
+    
+-->
+</script>
+
+<script type="text/javascript">
+<!--
+        var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+        document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F0372851182595b34710e2d28742442c6' type='text/javascript'%3E%3C/script%3E"));
+    
+-->
+</script>
+
+<script type="text/javascript">
+<!--
+        try{
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-1725443-12']);
+            _gaq.push(['_setDomainName', 'dayoo.com']);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        }
+        catch(e){}
+    
+-->
+</script>
+
+
+</body>
+</html>

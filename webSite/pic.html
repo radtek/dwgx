@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+<table width="440" height="97" border="0" align="center" cellpadding="0" cellspacing="0"> 
+  <tr> 
+ <table width="90%" border="0" cellspacing="0" cellpadding="5" align="center">
+        <tr> <td align=center>暂无相关产品</td></tr>
+        </table>
+		else
+	  		rs3.PageSize =9 '每页记录条数
+			iCount=rs3.RecordCount '记录总数
+			iPageSize=rs3.PageSize
+    		maxpage=rs3.PageCount 
+    		page=request("page")
+    
+    if Not IsNumeric(page) or page="" then
+        page=1
+    else
+        page=cint(page)
+    end if
+    
+    if page<1 then
+        page=1
+    elseif  page>maxpage then
+        page=maxpage
+    end if
+    
+    rs3.AbsolutePage=Page
+
+	if page=maxpage then
+		x=iCount-(maxpage-1)*iPageSize
+	else
+		x=iPageSize
+	end if
+	
+		For u=1 To x
+		%> 
+    <td width="597" align="center" ><table width="224" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="237" bgcolor="#EBE9EA"  class="s012"><table width="200" height="133" border="0" align="center" cellpadding="0" cellspacing="0"  > 
+      
+      <tr> 
+        <td width="200" height="75" align="center">
+             &nbsp;<a href="product_views.asp?id=填充数据" target="_blank" ><img border="0" src="填充数据"  height="149" width="200"  title="填充数据"></a></td> 
+   </tr>
+      
+      
+      </table></td>
+    <td width="10" rowspan="3"><img src="images/span.gif" width="4" height="4"></td>
+  </tr>
+  <tr>
+    <td align="center" bgcolor="#EBE9EA" class="s013">填充数据</td>
+    </tr>
+  
+</table>
+      <table width="204" height="14" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td>&nbsp;</td>
+        </tr>
+      </table></td>
+    <% 
+i=i+1 
+if i mod 3=0 then 
+
+%> 
+  </tr> 
+  <tr> 
+ <%
+end if
+rs3.movenext
+		next
+		call PageControl(iCount,maxpage,page,"border=0 align=center","<p align=center>")
+		
+		end if
+		rs3.close
+		set rs3=nothing
+Sub PageControl(iCount,pagecount,page,table_style,font_style)
+'生成上一页下一页链接
+    Dim query, a, x, temp
+    action = "http://" & Request.ServerVariables("HTTP_HOST") & Request.ServerVariables("SCRIPT_NAME")
+
+    query = Split(Request.ServerVariables("QUERY_STRING"), "&")
+    For Each x In query
+        a = Split(x, "=")
+        If StrComp(a(0), "page", vbTextCompare) <> 0 Then
+            temp = temp & a(0) & "=" & a(1) & "&"
+        End If
+    Next
+
+    Response.Write("<table width=100% border=0 cellpadding=0 cellspacing=0 bgcolor=#ffffff>" & vbCrLf )        
+    Response.Write("<form method=get onsubmit=""document.location = '" & action & "?" & temp & "Page='+ this.page.value;return false;""><TR>" & vbCrLf )
+    Response.Write("<TD align=center height=35>" & vbCrLf )
+    Response.Write(font_style & vbCrLf )    
+        
+    if page<=1 then
+        Response.Write ("首 页 " & vbCrLf)        
+        Response.Write ("上一页 " & vbCrLf)
+    else        
+        Response.Write("<A HREF=" & action & "?" & temp & "Page=1>首 页</A> " & vbCrLf)
+        Response.Write("<A HREF=" & action & "?" & temp & "Page=" & (Page-1) & ">上一页</A> " & vbCrLf)
+    end if
+
+    if page>=pagecount then
+        Response.Write ("下一页 " & vbCrLf)
+        Response.Write ("尾 页 " & vbCrLf)            
+    else
+        Response.Write("<A HREF=" & action & "?" & temp & "Page=" & (Page+1) & ">下一页</A> " & vbCrLf)
+        Response.Write("<A HREF=" & action & "?" & temp & "Page=" & pagecount & ">尾 页</A> " & vbCrLf)            
+    end if
+
+    Response.Write(" 页次：" & page & "/" & pageCount & "页" &  vbCrLf)
+	Response.Write(" 共有" & iCount & "个产品" &  vbCrLf)
+    Response.Write("</TD>" & vbCrLf )                
+    Response.Write("</TR></form>" & vbCrLf )        
+    Response.Write("</table>" & vbCrLf )        
+End Sub
+%>      
+    </tr> 
+</table>
+</body>
+</html>

@@ -1,0 +1,1 @@
+﻿FCKLang.RainbowBtn = 'Insert rainbow text' ;

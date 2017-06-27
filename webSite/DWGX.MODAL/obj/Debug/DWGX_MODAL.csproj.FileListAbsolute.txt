@@ -1,0 +1,5 @@
+D:\work\zqdwgx\DWGX_MODAL\bin\Debug\DWGX_MODAL.dll
+D:\work\zqdwgx\DWGX_MODAL\bin\Debug\DWGX_MODAL.pdb
+D:\work\zqdwgx\DWGX_MODAL\obj\Debug\DWGX_MODAL.csprojResolveAssemblyReference.cache
+D:\work\zqdwgx\DWGX_MODAL\obj\Debug\DWGX_MODAL.dll
+D:\work\zqdwgx\DWGX_MODAL\obj\Debug\DWGX_MODAL.pdb

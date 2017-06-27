@@ -1,0 +1,1 @@
+﻿FCKLang.FileTransBtn = '发送文件' ;

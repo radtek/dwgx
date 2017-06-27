@@ -1,0 +1,4 @@
+F:\zhc\work\dwgx\webSite\DWGX.MODAL\bin\Release\DWGX.MODAL.dll
+F:\zhc\work\dwgx\webSite\DWGX.MODAL\bin\Release\DWGX.MODAL.pdb
+F:\zhc\work\dwgx\webSite\DWGX.MODAL\obj\Release\DWGX.MODAL.dll
+F:\zhc\work\dwgx\webSite\DWGX.MODAL\obj\Release\DWGX.MODAL.pdb

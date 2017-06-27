@@ -1,0 +1,142 @@
+﻿body { margin:0px;
+	
+ 
+	color: #333333;
+	background-color: #2286C2;
+	padding:0px;
+}
+   body,td{
+       font-size:12px;
+        font-family: "宋体";
+       }
+       
+       
+.Green {color:Green;}
+.Red {color:Red;}
+.Blue {color:Blue;}
+
+.GreenA a { color:Green;}
+
+a:link{
+	 
+ 
+	line-height: 1.5;
+	font-weight: normal;
+	color: #333333;
+	text-decoration: none;
+}
+a:visited{
+ 
+	line-height: 1.5;
+	font-weight: normal;
+	color: #333333;
+	text-decoration: none;
+}
+a:hover{
+	font-family: "";
+ 
+	line-height: 1.5;
+	font-weight: normal;
+	color: #144882;
+	text-decoration: underline;
+}
+.font1{
+	font-family: "";
+ 
+	line-height: 1.5;
+	font-weight: normal;
+	color: #333333;
+}
+.txt{
+ 
+ 
+	font-weight: normal;
+	color: #333333;
+	width:150px;
+}
+a.font1:link{
+ 
+	line-height: 1.5;
+	font-weight: normal;
+	color: #333333;
+	text-decoration: none;
+}
+a.font1:visited{
+ 
+	line-height: 1.5;
+	font-weight: normal;
+	color: #333333;
+	text-decoration: none;
+}
+a.font1:hover{
+	 
+	font-size: 12px;
+	line-height: 1.5;
+	font-weight: normal;
+	color: #144882;
+	text-decoration: underline;
+}
+.font2{
+ 
+	line-height: 1.5;
+	font-weight: normal;
+	color: #144882;
+}
+a.font2:link{
+ 
+	line-height: 1.5;
+	font-weight: normal;
+	color: #144882;
+	text-decoration: none;
+}
+a.font2:visited{
+ 
+	line-height: 1.5;
+	font-weight: normal;
+	color: #144882;
+	text-decoration: none;
+}
+a.font2:hover{
+ 
+	line-height: 1.5;
+	font-weight: normal;
+	color: #144882;
+	text-decoration: underline;
+}
+.font3{
+	 
+	line-height: 1.5;
+	font-weight: normal;
+	color: #ffffff;
+}
+a.font3:link{
+	 
+	line-height: 1.5;
+	font-weight: normal;
+	color: #ffffff;
+	text-decoration: none;
+}
+a.font3:visited{
+ 
+	line-height: 1.5;
+	font-weight: normal;
+	color: #ffffff;
+	text-decoration: none;
+}
+a.font3:hover{
+ 
+	line-height: 1.5;
+	font-weight: normal;
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+
+
+.Table_BG0
+{
+background-color:#ffffff; line-height:26px; text-align:center;
+}
+.Table_BG1
+{
+	background-color:#F7FAFF;line-height:26px;text-align:center;
+}

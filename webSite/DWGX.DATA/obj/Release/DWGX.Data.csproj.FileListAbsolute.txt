@@ -1,0 +1,4 @@
+F:\zhc\work\dwgx\webSite\DWGX.DATA\bin\Release\DWGX.DATA.dll
+F:\zhc\work\dwgx\webSite\DWGX.DATA\bin\Release\DWGX.DATA.pdb
+F:\zhc\work\dwgx\webSite\DWGX.DATA\obj\Release\DWGX.DATA.dll
+F:\zhc\work\dwgx\webSite\DWGX.DATA\obj\Release\DWGX.DATA.pdb

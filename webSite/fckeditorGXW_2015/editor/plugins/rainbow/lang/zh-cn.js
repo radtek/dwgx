@@ -1,0 +1,1 @@
+﻿FCKLang.RainbowBtn = '彩虹字' ;
