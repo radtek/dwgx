@@ -114,7 +114,7 @@ padding:10px;
                                       <table width=100% border=0>
                                           <tr>
                                               <td>
-                                                  <asp:Label ID="myTitle" runat="server" Font-Bold="True" Text="添加专题类别"></asp:Label>
+                                                  <asp:Label ID="myTitle" runat="server" Font-Bold="True" Text="添加类别"></asp:Label>
                                               </td>
                                               <td>
                                               </td>
@@ -136,14 +136,14 @@ padding:10px;
                           <table id="Table3" bgcolor="#C4E7FB" border="0" cellpadding="4" cellspacing="1" width="100%">
                              <tr>
                                   <td colspan="1" rowspan="1" bgColor="#f8f8f8">
-                                      专题图片：</td>
+                                      类别图片：</td>
                                   <td bgcolor="#ffffff">
                                       <asp:FileUpload ID="uploadFile" runat="server" MaxLength="25" Width="250px"></asp:FileUpload>
                                       &nbsp;*（支持 .jpg .png .bmp）</td>
                               </tr>
                               <tr>
                                   <td colspan="1" rowspan="1" bgColor="#f8f8f8">
-                                      专题名称：</td>
+                                      类别名称：</td>
                                   <td bgcolor="#ffffff">
                                       <asp:TextBox ID="clbName" runat="server" MaxLength="25" Width="250px"></asp:TextBox>
                                       &nbsp;*（请填写名称）</td>

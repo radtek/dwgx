@@ -400,7 +400,7 @@ $(".yx-rotaion").yx_rotaion({auto:true});
           <p class="headzq_right_textff">信息</p>
           <p class="headzq_right_textff">公开</p>
         </div></td>
-        <td width="12%" align="center"><asp:HyperLink runat="server" NavigateUrl="~/class.aspx?TypeId=31&ToolTip=财政资金" ForeColor="White"><img src="img/caizhenjijin1.png" width="60" height="60"></asp:HyperLink></td>
+        <td width="12%" align="center"><asp:HyperLink runat="server" NavigateUrl="~/speciaTypelList.aspx?TypeId=31&ToolTip=财政预算决算" ForeColor="White"><img src="img/caizhenjijin1.png" width="60" height="60"></asp:HyperLink></td>
         <td width="9%">&nbsp;</td>
         <td width="13%" align="center"><asp:HyperLink runat="server" NavigateUrl="~/class.aspx?TypeId=32&ToolTip=环境保护" ForeColor="White"><img src="img/huangbao.png" width="60" height="60"></asp:HyperLink></td>
         <td width="9%">&nbsp;</td>
@@ -412,7 +412,7 @@ $(".yx-rotaion").yx_rotaion({auto:true});
        
       </tr>
       <tr>
-        <td class="top2018"><asp:HyperLink runat="server" NavigateUrl="~class.aspx?TypeId=31&ToolTip=财政资金" ForeColor="White">财政资金</asp:HyperLink></td>
+        <td class="top2018"><asp:HyperLink runat="server" NavigateUrl="~/speciaTypelList.aspx?TypeId=31&ToolTip=财政预算决算" ForeColor="White">财政预算决算</asp:HyperLink></td>
         <td>&nbsp;</td>
         <td class="top2018"><asp:HyperLink runat="server" NavigateUrl="~/class.aspx?TypeId=32&ToolTip=环境保护" ForeColor="White">环境保护</asp:HyperLink></td>
         <td>&nbsp;</td>

@@ -114,7 +114,7 @@ padding:10px;
                                       <table width=100% border=0>
                                           <tr>
                                               <td>
-                                                  <asp:Label ID="myTitle" runat="server" Font-Bold="True" Text="编辑专题类别"></asp:Label>
+                                                  <asp:Label ID="myTitle" runat="server" Font-Bold="True" Text="编辑类别"></asp:Label>
                                               </td>
                                               <td>
                                               </td>
@@ -136,7 +136,7 @@ padding:10px;
                           <table id="Table3" bgcolor="#C4E7FB" border="0" cellpadding="4" cellspacing="1" width="100%">
                               <tr>
                                   <td colspan="1" rowspan="1" bgColor="#f8f8f8">
-                                      专题图片：</td>
+                                      类别图片：</td>
                                   <td bgcolor="#ffffff">
                                    <asp:FileUpload ID="upLoadFile" runat="server" Width="276px" />&nbsp;&nbsp;
                                       <asp:HyperLink ID="cPic" runat="server" Target="_blank">HyperLink</asp:HyperLink>
@@ -145,7 +145,7 @@ padding:10px;
                               </tr>
                               <tr>
                                   <td colspan="1" rowspan="1" bgColor="#f8f8f8">
-                                      专题名称：</td>
+                                      类别名称：</td>
                                   <td bgcolor="#ffffff">
                                       <asp:TextBox ID="clbName" runat="server" MaxLength="25" Width="250px"></asp:TextBox>
                                       &nbsp;*（请填写名称）</td>

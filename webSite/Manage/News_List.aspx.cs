@@ -39,9 +39,10 @@ public partial class Manage_News_List : System.Web.UI.Page
         reqTypeName = CommonClass.UrlEnCode(Request.QueryString["cTypeName"], System.Text.Encoding.UTF8);
 
         //如果是专题专栏，则跳转到专题专栏类别
-        if (reqTypeId != null && int.Parse(reqTypeId) == 5)
+        if (reqTypeId != null && (int.Parse(reqTypeId) == 5 || int.Parse(reqTypeId) == 31))
         {
-            Response.Redirect("specialTypeList.aspx?TypeId="+ reqTypeId);           
+            Response.Redirect("specialTypeList.aspx?TypeId="+ reqTypeId);
+            return;  
         }
 
 
