@@ -50,33 +50,33 @@ public partial class VoteDo : System.Web.UI.Page
 
     }
 
-    [WebMethod]
-    public static string CommitVote(string str)
-    {
-        int voteId = 0;
-        string[] _arryUserId = str.Split(',');
-        try
-        {
-            foreach (string _Id in _arryUserId)
-            {
-                if (string.IsNullOrEmpty(_Id))
-                    continue;
+    //[WebMethod]
+    //public static string CommitVote(string str)
+    //{
+    //    int voteId = 0;
+    //    string[] _arryUserId = str.Split(',');
+    //    try
+    //    {
+    //        foreach (string _Id in _arryUserId)
+    //        {
+    //            if (string.IsNullOrEmpty(_Id))
+    //                continue;
 
-                DWGX.Model.VoteData _voteData = new DWGX.BLL.VoteData().GetVoteData(int.Parse(_Id));
-                if (_voteData != null)
-                { 
-                    _voteData.iCount += 1;
-                     new DWGX.BLL.VoteData().Update(_voteData);
-                    voteId = (int)_voteData.iVoteID;
-                }
-            }
-            return voteId.ToString();
-        }
-        catch (Exception e)
-        {
-            return "投票失败:" + e.Message;
-        }
+    //            DWGX.Model.VoteData _voteData = new DWGX.BLL.VoteData().GetVoteData(int.Parse(_Id));
+    //            if (_voteData != null)
+    //            { 
+    //                _voteData.iCount += 1;
+    //                 new DWGX.BLL.VoteData().Update(_voteData);
+    //                voteId = (int)_voteData.iVoteID;
+    //            }
+    //        }
+    //        return voteId.ToString();
+    //    }
+    //    catch (Exception e)
+    //    {
+    //        return "投票失败:" + e.Message;
+    //    }
 
 
-    }
+    //}
 }

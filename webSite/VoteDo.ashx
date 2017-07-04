@@ -9,7 +9,9 @@ public class VoteDo : IHttpHandler {
 
     public void ProcessRequest (HttpContext context) {
         context.Response.ContentType = "text/plain";
-        context.Response.Write(context.Request.Form["pAct"]);
+        int voteId = CommitVote(context.Request["Checkbox"]);
+
+        context.Response.Redirect("VoteChart.aspx?voteId="+voteId.ToString());
     }
 
     public bool IsReusable {
@@ -18,9 +20,7 @@ public class VoteDo : IHttpHandler {
         }
     }
 
-
-    [WebMethod]
-    public static string CommitVote(string str)
+    public int CommitVote(string str)
     {
 
 
@@ -40,7 +40,8 @@ public class VoteDo : IHttpHandler {
                 voteId = (int)_voteData.iVoteID;
             }
         }
-        return voteId.ToString();
+
+        return voteId;
     }
 
 

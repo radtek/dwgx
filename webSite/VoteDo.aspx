@@ -169,7 +169,7 @@ function goTop(){
 </div>
     
 <section  class="container features">
-    <form id="formVote" action="#" onsubmit="return CheckData(this);">
+    <form id="formVote" action="VoteDo.ashx" method="post">
    <table width="100%" border="0" cellspacing="0" cellpadding="0">
      <tr>
     <td colspan="3" class="top3lk_ohter1">当前位置：<a href="index.aspx">网站首页</a> >问卷调查</td>
@@ -212,7 +212,7 @@ function goTop(){
                           </asp:Repeater>
         </table></td>
         </tr>
-        <tr><td colspan="2" class="top21tt" style="text-align:center"><Button ID="btnCommit" onclick="formVoteCommit" value="262" />&nbsp;&nbsp;提交&nbsp;&nbsp;
+        <tr><td colspan="2" class="top21tt" style="text-align:center"><Button ID="btnCommit" value="262" />&nbsp;&nbsp;提交&nbsp;&nbsp;
             </td></tr>
     </table></td>
     <td width="8%">&nbsp;</td>
@@ -420,7 +420,7 @@ $(".fullSlide").slide({
         }
 
 
-
+    
         $("#btnCommit").click(function () {
 
             _str = "";
@@ -433,31 +433,32 @@ $(".fullSlide").slide({
                 alert("请至少选择一项内容");
                 return false;
             }
-            
+
+            /*
             $.ajax({
                 //要用post方式      
-                type: "get",
+                type: "post",
                 //方法所在页面和方法名      
                 url: "VoteDo.ashx/CommitVote",
                 data: "{str:'" + _str + "'}",
                 contentType: "application/json",
                 dataType: "json",
-                async: false,
+                async: true,
                 success: function (data) {
                     //location.reload(true);   
                     //location.href = "VoteChart.aspx?voteId=" + data.d;
-                    alert("投票成功");
+                    alert("投票成功" + date.voteid);
                     return false;
                 },
                 error: function (err, textStatus) {
                     alert(err + "," + textStatus);
                 }
-            });
+            });*/
             return true;
 
         });
-
-
+    
+        
     </script>
 </body>
 </html>
