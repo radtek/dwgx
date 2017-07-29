@@ -11,6 +11,9 @@ public partial class NewDetail : System.Web.UI.Page
 
     protected void Page_Load(object sender, EventArgs e)
     {
+        SqlChecker SqlChecker = new SqlChecker(this.Request, this.Response, "http://" + BCW.Common.Utils.GetDomain());
+        SqlChecker.Check();
+
         this.Form.Target = "_blank";
         string pId = Request.QueryString["id"];
 

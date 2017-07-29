@@ -18,6 +18,9 @@ public partial class VoteL : System.Web.UI.Page
 
     protected void Page_Load(object sender, EventArgs e)
     {
+        SqlChecker SqlChecker = new SqlChecker(this.Request, this.Response, "http://" + BCW.Common.Utils.GetDomain());
+        SqlChecker.Check();
+
         if (Request.QueryString["ToolTip"] != null)
             toolTip = Request.QueryString["ToolTip"];
 

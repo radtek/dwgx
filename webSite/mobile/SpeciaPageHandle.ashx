@@ -9,6 +9,8 @@ public class SpeciaPageHandle : IHttpHandler {
     public void ProcessRequest (HttpContext context) {
         context.Response.ContentType = "text/plain";
 
+        SqlChecker SqlChecker = new SqlChecker(context.Request, context.Response, "http://" + BCW.Common.Utils.GetDomain());
+        SqlChecker.Check();
 
         string mTypeId = context.Request.QueryString["TypeId"];
 

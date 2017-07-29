@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-
+using BCW.Common;
 
 
 /// <summary>
@@ -183,8 +183,8 @@ public class SqlChecker
     {
         if (CheckRequestQuery() || CheckRequestForm())
         {
-            response.Write(Msg);
-            response.End();
+             response.Write(Msg);
+             response.End();
         }
     }
 }

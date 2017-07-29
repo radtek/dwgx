@@ -18,8 +18,13 @@ public partial class speciaTypelList : System.Web.UI.Page
 
     protected void Page_Load(object sender, EventArgs e)
     {
+
+        SqlChecker SqlChecker = new SqlChecker(this.Request, this.Response, "http://" + BCW.Common.Utils.GetDomain());
+        SqlChecker.Check();
+
         if (!IsPostBack)
         {
+
             reqTypeId = Request.QueryString["TypeId"];
             reqSeekTitle = Request.QueryString["seekStr"];
             if (Request.QueryString["ToolTip"] != null)

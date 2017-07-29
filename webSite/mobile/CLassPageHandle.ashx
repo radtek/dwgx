@@ -9,6 +9,9 @@ public class ClassPageHandle : IHttpHandler {
     public void ProcessRequest (HttpContext context) {
         context.Response.ContentType = "text/plain";
 
+        SqlChecker SqlChecker = new SqlChecker(context.Request, context.Response, "http://" + BCW.Common.Utils.GetDomain());
+        SqlChecker.Check();
+
         string mTypeId = context.Request.QueryString["TypeId"];
 
         int _pageIndex = 1;

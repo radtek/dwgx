@@ -10,6 +10,9 @@ public partial class VoteChart : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
+        SqlChecker SqlChecker = new SqlChecker(this.Request, this.Response, "http://" + BCW.Common.Utils.GetDomain());
+        SqlChecker.Check();
+
         int _voteID = int.Parse(Request.QueryString["voteId"]);
         string whereStr = " where iVoteID=" + _voteID.ToString();
 

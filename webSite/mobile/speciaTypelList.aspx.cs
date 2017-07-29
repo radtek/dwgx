@@ -13,6 +13,9 @@ public partial class mobile_speciaTypelList : System.Web.UI.Page
 
     protected void Page_Load(object sender, EventArgs e)
     {
+        SqlChecker SqlChecker = new SqlChecker(this.Request, this.Response, "http://" + BCW.Common.Utils.GetDomain());
+        SqlChecker.Check();
+
         if (!IsPostBack)
         { 
             reqTypeId = Request.QueryString["TypeId"];
