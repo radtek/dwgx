@@ -150,6 +150,13 @@ padding:10px;
                                       <asp:TextBox ID="clbName" runat="server" MaxLength="25" Width="250px"></asp:TextBox>
                                       &nbsp;*（请填写名称）</td>
                               </tr>
+                                                            <tr>
+                                  <td colspan="1" rowspan="1" bgColor="#f8f8f8">
+                                      类别外部链接：</td>
+                                  <td bgcolor="#ffffff">
+                                      <asp:TextBox ID="clbLinkUrl" runat="server" MaxLength="300" Width="250px"></asp:TextBox>
+                                      &nbsp;*（非空时前台点击该类目将直接跳转到此地址）</td>
+                              </tr>
                               <tr>
                                   <td bgcolor="#ffffff" style="height: 21px">
                                   </td>

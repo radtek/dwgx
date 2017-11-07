@@ -37,7 +37,7 @@ public partial class speciaTypelList : System.Web.UI.Page
 
             //大旺新闻
             string _sqlStr;
-            _sqlStr = "select * from tb_NewsType " + whereStr + " order by dCreateTime desc";
+            _sqlStr = "select * from tb_NewsType " + whereStr + " order by id";
             DataSet _dsNews = DWGX.Data.SqlHelper.Query(_sqlStr);
             PagedDataSource pds = new PagedDataSource();
             pds.DataSource = _dsNews.Tables[0].DefaultView;

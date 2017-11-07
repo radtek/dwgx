@@ -15,10 +15,13 @@
   
 <!--<link rel="stylesheet" href="css/style_add.css" type="text/css" />-->
 
-
+<!--加入统计信息 begin-->
+<script language="JavaScript">var _trackDataType = "web";var _trackData = _trackData || [];</script>
+<script type="text/javascript" charset="utf-8" id="kpyfx_js_id_10003317" src="//fxsjcj.kaipuyun.cn/count/10003317/10003317.js"></script>
+<!--加入统计信息 end-->
 
 <script src="js/jquery-2.0.3.min.js" type="text/javascript"></script>	
-
+<script src="js/openUrlDialog.js" type="text/javascript"></script>
 <script type="text/javascript">
 
 $(document).ready(function(){
@@ -117,7 +120,7 @@ function goTop(){
       <tr>
         <td width="9%"><a href="mailto:zqgxqld@163.com"><img src="images/timg 2.jpg" width="40" height="40"></a></td>
         <td width="23%" class="headzq_right_text">领导信箱zqgxqld@163.com</td>
-        <td width="9%"><a href="http://wz.zhaoqing.gov.cn/wzpt" target="_blank"><img src="images/timg_ad.jpg" width="40" height="40"></a></td>
+        <td width="9%"><a href="javascript:void(0)" onclick="OpenUrl('http://wz.zhaoqing.gov.cn/wzpt')"><img src="images/timg_ad.jpg" width="40" height="40"></a></td>
         <td width="25%" class="headzq_right_text">在线访谈wz.zhaoqing.gov.cn/wzpt</td>
         <td width="9%"><a href="VoteList.aspx?toolTip=问卷调查" target="_blank"><img src="images/timg.jpg" width="40" height="40"><a></td>
         <td width="25%" class="headzq_right_text">问卷调查www.zqgx.gov.cn/survey</td>
@@ -134,7 +137,7 @@ function goTop(){
 <table width="100%" border="0" cellspacing="0" cellpadding="0" height="30">
   <tr>
     <td width="8%"><a href="index.aspx">网站首页</a></td>
-    <td width="8%"><a href="class.aspx?TypeId=2&ToolTip=新闻资讯">新闻资讯</a></td>
+    <td width="8%"><a href="newTypeRedirect.ashx?TypeId=2&ToolTip=新闻资讯">新闻资讯</a></td>
     <td width="8%"><a href="index.aspx#qqjj">区情简介</a></td>
     <td width="8%"><a href="index.aspx#zsyz">招商引资</a></td>
     <td width="8%"><a href="index.aspx#zcyz">招才引智</a></td>
@@ -296,29 +299,29 @@ function goTop(){
 <div class="h-wtbz">
 
     <p>    
-        <a href="http://www.zqgxjjjc.gov.cn/" target="_blank" style="margin: 0 10px;"  >区纪检监察网</a>
+        <a href="javascript:void(0)" onclick="OpenUrl('http://www.zqgxjjjc.gov.cn/')" style="margin: 0 10px;"  >区纪检监察网</a>
                     
                 
-        <a href="http://www.job0758.com.cn/V3/" target="_blank" style="margin: 0 10px;">区人才网</a>
+        <a href="javascript:void(0)" onclick="OpenUrl('http://www.job0758.com.cn/V3/')" style="margin: 0 10px;">区人才网</a>
                     
                 
-        <a href="http://www.zqhtmse.com/gd/index.asp" target="_blank" style="margin: 0 10px;">区中小企业网</a>
+        <a href="javascript:void(0)" onclick="OpenUrl('http://www.zqhtmse.com/gd/index.asp')" style="margin: 0 10px;">区中小企业网</a>
                     
                 
-        <a href="http://www.zqhzepb.gov.cn/" target="_blank" style="margin: 0 10px;">区环保局门户网</a>
+        <a href="javascript:void(0)" onclick="OpenUrl('http://www.zqhzepb.gov.cn/')" style="margin: 0 10px;">区环保局门户网</a>
                     
                 
-        <a href="http://www.padw.gov.cn/" target="_blank" style="margin: 0 10px;">肇庆平安大旺</a>
+        <a href="javascript:void(0)" onclick="OpenUrl('http://www.padw.gov.cn/')"  style="margin: 0 10px;">肇庆平安大旺</a>
                     
                 
-        <a href="http://www.zqhzst.gov.cn/" target="_blank" style="margin: 0 10px;">区科技信息网</a>
+        <a href="javascript:void(0)" onclick="OpenUrl('http://www.zqhzst.gov.cn/')" style="margin: 0 10px;">区科技信息网</a>
                     
                 
-        <a href="http://www.gxld.gov.cn/" target="_blank" style="margin: 0 10px;">区劳动和社会保障局</a>
+        <a href="javascript:void(0)" onclick="OpenUrl('http://www.gxld.gov.cn/')" style="margin: 0 10px;">区劳动和社会保障局</a>
                     
-            <a href="http://www.zqhzsafety.gov.cn/" target="_blank" style="margin: 0 10px;">区安全监管网</a>
+            <a href="javascript:void(0)" onclick="OpenUrl('http://www.zqhzsafety.gov.cn/')"  style="margin: 0 10px;">区安全监管网</a>
               
-        <a href="http://www.zqdwedu.com/webschool/News/" target="_blank" style="margin: 0 10px;">区教育信息网</a>
+        <a href="javascript:void(0)" onclick="OpenUrl('http://www.zqdwedu.com/webschool/News/')"  style="margin: 0 10px;">区教育信息网</a>
     </p>
 </div>
   
@@ -354,7 +357,7 @@ $(".fullSlide").slide({
   <tr>
     
     <td width="561" >
-    <p class="headzq_logo_text211" >肇庆高新网版权所有，未经书面授权禁止使用。粤ICP备09172506 </p>
+    <p class="headzq_logo_text211" >肇庆高新网版权所有，未经书面授权禁止使用。粤ICP备09172506 &nbsp; 网站标识码:4412910009 </p>
 <p class="headzq_logo_text211" >主办单位：肇庆国家高新技术产业开发区</p>
 <p class="headzq_logo_text211" >技术开发：肇庆国家高新技术产业开发区肇庆高新采编中心 </p>
 <p class="headzq_logo_text211" >地 址：高新区政德大街劳动力大楼（行政服务中心）四楼西翼</p>
@@ -367,10 +370,10 @@ $(".fullSlide").slide({
         <tr>
           
           <td width="9%"><img src="images/2wm.png" width="100" height="100"></td>
-            <td width="9%"><a href="http://bszs.conac.cn/sitename?method=show&id=33B99A8643E24B72E053022819AC32CC" target="_blank"><img src="images/red.png" width="80" height="80"></a></td>
+            <td width="9%"><a href="javascript:void(0)" onclick="OpenUrl('http://bszs.conac.cn/sitename?method=show&id=33B99A8643E24B72E053022819AC32CC')"><img src="images/red.png" width="80" height="80"></a></td>
           
-          <td width="9%"><a href="http://121.43.68.40/exposure/jiucuo.html?site_code=4412910008&url=http%3A%2F%2Fwww.zqgx.gov.cn%2F" target="_blank"><img src="images/jiucuo.png" width="110" height="55"></a></td>
-          <td width="9%" class="headzq_right_text"><a href="http://210.76.65.188/newwebsite/main.jsp?id=4412&adir=&wy=1" target="_blank"><img src="images/jblong.jpg" width="226" height="93"></a></td>
+          <td width="9%"><a href="javascript:void(0)" onclick="OpenUrl('http://121.43.68.40/exposure/jiucuo.html?site_code=4412910008&url=http%3A%2F%2Fwww.zqgx.gov.cn%2F')"><img src="images/jiucuo.png" width="110" height="55"></a></td>
+          <td width="9%" class="headzq_right_text"><a href="javascript:void(0)" onclick="OpenUrl('http://210.76.65.188/newwebsite/main.jsp?id=4412&adir=&wy=1')"><img src="images/jblong.jpg" width="226" height="93"></a></td>
         </tr>
         
       </table></td>
@@ -417,7 +420,7 @@ $(".fullSlide").slide({
 
         var content3 = "<img width='290' height='290' src='images/DZB.png' />";//弹出图片
 
-        T$('click_test3').onclick = function () { TINY.box.show(content3, 0, 0, 0, 1) }
+        T$('click_test3').onclick = function () { window.location.href = "/DZB/Default.aspx"; }
 
        
         //查找

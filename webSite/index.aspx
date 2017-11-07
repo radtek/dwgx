@@ -15,9 +15,16 @@
   
 <!--<link rel="stylesheet" href="css/style_add.css" type="text/css" />-->
 
+<!--加入统计信息 begin-->
+<script language="JavaScript">var _trackDataType = "web";var _trackData = _trackData || [];</script>
+<script type="text/javascript" charset="utf-8" id="kpyfx_js_id_10003317" src="//fxsjcj.kaipuyun.cn/count/10003317/10003317.js"></script>
+<!--加入统计信息 end-->
+
  <script src="js/jquery-2.0.3.min.js" type="text/javascript"></script>	
 
-<script src="js/gundong.js" type="text/javascript"></script>	
+<script src="js/gundong.js" type="text/javascript"></script>
+<script src="js/openUrlDialog.js" type="text/javascript"></script>	
+    	
 <script type="text/javascript">
 
 $(document).ready(function(){
@@ -158,6 +165,7 @@ jQuery(document).ready(function(){
     </script>
 
 
+
 </head>
 
 <body id="page-top">
@@ -186,7 +194,7 @@ jQuery(document).ready(function(){
       <tr>
         <td width="9%"><a href="mailto:zqgxqld@163.com"><img src="images/timg 2.jpg" width="40" height="40"></a></td>
         <td width="23%" class="headzq_right_text">领导信箱zqgxqld@163.com</td>
-        <td width="9%"><a href="http://wz.zhaoqing.gov.cn/wzpt" target="_blank"><img src="images/timg_ad.jpg" width="40" height="40"></a></td>
+        <td width="9%"><a href="javascript:void(0)" onclick="OpenUrl('http://wz.zhaoqing.gov.cn/wzpt')"><img src="images/timg_ad.jpg" width="40" height="40"></a></td>
         <td width="25%" class="headzq_right_text">在线访谈wz.zhaoqing.gov.cn/wzpt</td>
         <td width="9%"><a href="VoteList.aspx?toolTip=问卷调查" target="_blank"><img src="images/timg.jpg" width="40" height="40"><a></td>
         <td width="25%" class="headzq_right_text">问卷调查www.zqgx.gov.cn/survey</td>
@@ -203,7 +211,7 @@ jQuery(document).ready(function(){
 <table width="100%" border="0" cellspacing="0" cellpadding="0" height="30">
   <tr>
     <td width="8%"><a href="index.aspx">网站首页</a></td>
-    <td width="8%"><a href="class.aspx?TypeId=2&ToolTip=新闻资讯">新闻资讯</a></td>
+    <td width="8%"><a href="newTypeRedirect.ashx?TypeId=2&ToolTip=新闻资讯">新闻资讯</a></td>
     <td width="8%"><a href="#qqjj">区情简介</a></td>
     <td width="8%"><a href="#zsyz">招商引资</a></td>
     <td width="8%"><a href="#zcyz">招才引智</a></td>
@@ -257,14 +265,14 @@ jQuery(document).ready(function(){
     <td> <h2 align="center"><a href="DZB/Default.aspx" target="_blank"><img src="images/book.png" width="100" height="100"></a></h2>
             <p class="featuresh2"><a href="DZB/Default.aspx" target="_blank">大旺通讯电子报</a></p>
            <p  class="featuresh2"><img src="images/dian.jpg" width="180" height="1"></p></td>
-    <td> <h2 align="center"><a href="class.aspx?TypeId=45&ToolTip=高新区电视台"><img src="images/tv.jpg"   width="100" height="100"></a></h2>
-            <p class="featuresh2"><a href="class.aspx?TypeId=45&ToolTip=高新区电视台">高新区电视台</a></p>
+    <td> <h2 align="center"><a href="newTypeRedirect.ashx?TypeId=45&ToolTip=高新区电视台"><img src="images/tv.jpg"   width="100" height="100"></a></h2>
+            <p class="featuresh2"><a href="newTypeRedirect.ashx?TypeId=45&ToolTip=高新区电视台">高新区电视台</a></p>
            <p  class="featuresh2"><img src="images/dian.jpg" width="180" height="1"></p></td>
-    <td> <h2 align="center"><a href="/speciaTypelList.aspx?TypeId=5&ToolTip=专题专栏"><img src="images/pro.jpg"  width="100" height="100"></a></h2>
-            <p class="featuresh2"><a href="/speciaTypelList.aspx?TypeId=5&ToolTip=专题专栏">专题专栏</a></p>
+    <td> <h2 align="center"><a href="/newTypeRedirect.ashx?TypeId=5&ToolTip=专题专栏"><img src="images/pro.jpg"  width="100" height="100"></a></h2>
+            <p class="featuresh2"><a href="/newTypeRedirect.ashx?TypeId=5&ToolTip=专题专栏">专题专栏</a></p>
            <p  class="featuresh2"><img src="images/dian.jpg" width="180" height="1"></p></td>
-    <td> <h2 align="center"><a href="http://61.146.213.218:9000/portal/website/index.action?areacode=441285" target="_blank"><img src="images/timg.png"  width="100" height="100"></a></h2>
-            <p class="featuresh2"><a href="http://61.146.213.218:9000/portal/website/index.action?areacode=441285" target="_blank">广东省网站办事大厅</a></p>
+    <td> <h2 align="center"><a href="javascript:void(0)" onclick="OpenUrl('http://61.146.213.218:9000/portal/website/index.action?areacode=441285')"><img src="images/timg.png"  width="100" height="100"></a></h2>
+            <p class="featuresh2"><a href="javascript:void(0)" onclick="OpenUrl('http://61.146.213.218:9000/portal/website/index.action?areacode=441285')">广东省网站办事大厅</a></p>
            <p  class="featuresh2"><img src="images/dian.jpg" width="180" height="1"></p></td>
   </tr>
 </table>
@@ -350,17 +358,17 @@ $(".yx-rotaion").yx_rotaion({auto:true});
           <p class="headzq_right_textff">信息</p>
           <p class="headzq_right_textff">公开</p>
         </div>
-      <!--  <div class="headzq_right_textfa"></div>-->
-        
-        </td>
+      <!--  <div class="headzq_right_textfa"></div>-->        </td>
         <td width="12%" align="center"><asp:HyperLink runat="server" NavigateUrl="~/Info.aspx?id=20&ToolTip=领导之窗" ForeColor="White"><img src="img/lindao.png" width="60" height="60"></asp:HyperLink></td>
         <td width="9%">&nbsp;</td>
         <td width="13%" align="center"><asp:HyperLink runat="server" NavigateUrl="http://zwgk.zqgx.gov.cn/" ForeColor="White" Target="_blank"><img src="img/bumenxin.png" width="60" height="60"></asp:HyperLink></td>
         <td width="9%">&nbsp;</td>
-        <td width="13%" align="center"><asp:HyperLink runat="server" NavigateUrl="~/class.aspx?TypeId=10&ToolTip=新闻发布会" ForeColor="White"><img src="img/news.png" width="60" height="60"></asp:HyperLink></td>
+        <td width="13%" align="center"><asp:HyperLink runat="server" NavigateUrl="~/newTypeRedirect.ashx?TypeId=10&ToolTip=新闻发布会" ForeColor="White"><img src="img/news.png" width="60" height="60"></asp:HyperLink></td>
         <td width="9%">&nbsp;</td>
-        <td width="13%" align="center"><asp:HyperLink runat="server" NavigateUrl="~/class.aspx?TypeId=11&ToolTip=规划统计" ForeColor="White"><img src="img/caizhenjijin.png" width="60" height="60"></asp:HyperLink></td>
+        <td width="13%" align="center"><asp:HyperLink runat="server" NavigateUrl="~/newTypeRedirect.ashx?TypeId=11&ToolTip=规划统计" ForeColor="White"><img src="img/caizhenjijin.png" width="60" height="60"></asp:HyperLink></td>
        
+        <td width="13%" align="center">&nbsp;</td>
+        <td width="13%" align="center"><asp:HyperLink runat="server" NavigateUrl="~/newTypeRedirect.ashx?TypeId=64&ToolTip=区中小企业信息" ForeColor="White"><img src="img/zxqy.png" width="60" height="60"></asp:HyperLink></td>
       </tr>
       
       <tr>
@@ -368,28 +376,34 @@ $(".yx-rotaion").yx_rotaion({auto:true});
         <td class="top2018">&nbsp;</td>
         <td class="top2018"><asp:HyperLink runat="server" NavigateUrl="http://zwgk.zqgx.gov.cn/" ForeColor="White" Target="_blank">部门信息</asp:HyperLink></td>
         <td class="top2018">&nbsp;</td>
-        <td class="top2018"><asp:HyperLink runat="server" NavigateUrl="~/class.aspx?TypeId=10&ToolTip=新闻发布会" ForeColor="White">新闻发布会</asp:HyperLink></td>
+        <td class="top2018"><asp:HyperLink runat="server" NavigateUrl="~/newTypeRedirect.ashx?TypeId=10&ToolTip=新闻发布会" ForeColor="White">新闻发布会</asp:HyperLink></td>
         <td class="top2018">&nbsp;</td>
-        <td class="top2018"><asp:HyperLink runat="server" NavigateUrl="~/class.aspx?TypeId=11&ToolTip=规划统计" ForeColor="White">规划统计</asp:HyperLink></td>
-        </tr>
+        <td class="top2018"><asp:HyperLink runat="server" NavigateUrl="~/newTypeRedirect.ashx?TypeId=11&ToolTip=规划统计" ForeColor="White">规划统计</asp:HyperLink></td>
+        <td class="top2018">&nbsp;</td>
+        <td class="top2018"><asp:HyperLink runat="server" NavigateUrl="~/newTypeRedirect.ashx?TypeId=64&ToolTip=区中小企业信息" ForeColor="White">区中小企业信息</asp:HyperLink></td>
+      </tr>
       <tr>
-        <td align="center"><asp:HyperLink runat="server" NavigateUrl="~/class.aspx?TypeId=27&ToolTip=人事信息" ForeColor="White"><img src="img/renshi.png" width="60" height="60"></asp:HyperLink></td>
+        <td align="center"><asp:HyperLink runat="server" NavigateUrl="~/newTypeRedirect.ashx?TypeId=27&ToolTip=人事信息" ForeColor="White"><img src="img/renshi.png" width="60" height="60"></asp:HyperLink></td>
         <td>&nbsp;</td>
-        <td align="center"><asp:HyperLink runat="server" NavigateUrl="~/class.aspx?TypeId=28&ToolTip=公开年报" ForeColor="White"><img src="img/niaobao.png" width="60" height="60"></asp:HyperLink></td>
+        <td align="center"><asp:HyperLink runat="server" NavigateUrl="~/newTypeRedirect.ashx?TypeId=28&ToolTip=公开年报" ForeColor="White"><img src="img/niaobao.png" width="60" height="60"></asp:HyperLink></td>
         <td>&nbsp;</td>
-        <td align="center"><asp:HyperLink runat="server" NavigateUrl="~/class.aspx?TypeId=29&ToolTip=民生工程" ForeColor="White"><img src="img/mingsheng.png" width="60" height="60"></asp:HyperLink></td>
+        <td align="center"><asp:HyperLink runat="server" NavigateUrl="~/newTypeRedirect.ashx?TypeId=29&ToolTip=民生工程" ForeColor="White"><img src="img/mingsheng.png" width="60" height="60"></asp:HyperLink></td>
         <td>&nbsp;</td>
-        <td align="center"><asp:HyperLink runat="server" NavigateUrl="~/class.aspx?TypeId=30&ToolTip=政策文件" ForeColor="White"><img src="img/zhenche.png" width="60" height="60"></asp:HyperLink></td>
-        </tr>
+        <td align="center"><asp:HyperLink runat="server" NavigateUrl="~/newTypeRedirect.ashx?TypeId=30&ToolTip=政策文件" ForeColor="White"><img src="img/zhenche.png" width="60" height="60"></asp:HyperLink></td>
+        <td align="center">&nbsp;</td>
+        <td align="center"><asp:HyperLink runat="server" NavigateUrl="~/newTypeRedirect.ashx?TypeId=75&ToolTip=行政服务中心" ForeColor="White"><img src="img/xzzx.png" width="60" height="60"></asp:HyperLink></td>
+      </tr>
       <tr>
-        <td class="top2018"><asp:HyperLink runat="server" NavigateUrl="~/class.aspx?TypeId=27&ToolTip=人事信息" ForeColor="White">人事信息</asp:HyperLink></td>
+        <td class="top2018"><asp:HyperLink runat="server" NavigateUrl="~/newTypeRedirect.ashx?TypeId=27&ToolTip=人事信息" ForeColor="White">人事信息</asp:HyperLink></td>
         <td class="top2018">&nbsp;</td>
-        <td class="top2018"><asp:HyperLink runat="server" NavigateUrl="~/class.aspx?TypeId=28&ToolTip=公开年报" ForeColor="White">公开年报</asp:HyperLink></td>
+        <td class="top2018"><asp:HyperLink runat="server" NavigateUrl="~/newTypeRedirect.ashx?TypeId=28&ToolTip=公开年报" ForeColor="White">公开年报</asp:HyperLink></td>
         <td class="top2018">&nbsp;</td>
-        <td class="top2018"><asp:HyperLink runat="server" NavigateUrl="~/class.aspx?TypeId=29&ToolTip=民生工程" ForeColor="White">民生工程</asp:HyperLink></td>
+        <td class="top2018"><asp:HyperLink runat="server" NavigateUrl="~/newTypeRedirect.ashx?TypeId=29&ToolTip=民生工程" ForeColor="White">民生工程</asp:HyperLink></td>
         <td class="top2018">&nbsp;</td>
-        <td class="top2018"><asp:HyperLink runat="server" NavigateUrl="~/class.aspx?TypeId=30&ToolTip=政策文件" ForeColor="White">政策文件</asp:HyperLink></td>
-        </tr>
+        <td class="top2018"><asp:HyperLink runat="server" NavigateUrl="~/newTypeRedirect.ashx?TypeId=30&ToolTip=政策文件" ForeColor="White">政策文件</asp:HyperLink></td>
+        <td class="top2018">&nbsp;</td>
+        <td class="top2018"><asp:HyperLink runat="server" NavigateUrl="~/newTypeRedirect.ashx?TypeId=75&ToolTip=行政服务中心" ForeColor="White">行政服务中心</asp:HyperLink></td>
+      </tr>
 
     </table></td>
     <td width="2%">&nbsp;</td>
@@ -400,50 +414,58 @@ $(".yx-rotaion").yx_rotaion({auto:true});
           <p class="headzq_right_textff">信息</p>
           <p class="headzq_right_textff">公开</p>
         </div></td>
-        <td width="12%" align="center"><asp:HyperLink runat="server" NavigateUrl="~/speciaTypelList.aspx?TypeId=31&ToolTip=财政预算决算" ForeColor="White"><img src="img/caizhenjijin1.png" width="60" height="60"></asp:HyperLink></td>
-        <td width="9%">&nbsp;</td>
-        <td width="13%" align="center"><asp:HyperLink runat="server" NavigateUrl="~/class.aspx?TypeId=32&ToolTip=环境保护" ForeColor="White"><img src="img/huangbao.png" width="60" height="60"></asp:HyperLink></td>
-        <td width="9%">&nbsp;</td>
-        <td width="13%" align="center"><asp:HyperLink runat="server" NavigateUrl="~/class.aspx?TypeId=33&ToolTip=安全生产" ForeColor="White"><img src="img/anquna.png" width="60" height="60"></asp:HyperLink></td>
-        <td width="9%">&nbsp;</td>
-        <td width="13%" align="center"><asp:HyperLink runat="server" NavigateUrl="~/class.aspx?TypeId=34&ToolTip=扶贫工作" ForeColor="White"><img src="img/fuping.png" width="60" height="60"></asp:HyperLink></td>
-        <td width="8%">&nbsp;</td>
-        <td width="8%" align="center"><asp:HyperLink runat="server" NavigateUrl="~/class.aspx?TypeId=35&ToolTip=社保就业" ForeColor="White"><img src="img/shebaojie.png" width="60" height="60"></asp:HyperLink></td>
+        <td width="12%" align="center"><asp:HyperLink runat="server" NavigateUrl="~/newTypeRedirect.ashx?TypeId=31&ToolTip=财政预算决算" ForeColor="White"><img src="img/caizhenjijin1.png" width="60" height="60"></asp:HyperLink></td>
+        <td width="6%">&nbsp;</td>
+        <td width="13%" align="center"><asp:HyperLink runat="server" NavigateUrl="~/newTypeRedirect.ashx?TypeId=32&ToolTip=环境保护" ForeColor="White"><img src="img/huangbao.png" width="60" height="60"></asp:HyperLink></td>
+        <td width="6%">&nbsp;</td>
+        <td width="13%" align="center"><asp:HyperLink runat="server" NavigateUrl="~/newTypeRedirect.ashx?TypeId=33&ToolTip=安全生产" ForeColor="White"><img src="img/anquna.png" width="60" height="60"></asp:HyperLink></td>
+        <td width="6%">&nbsp;</td>
+        <td width="13%" align="center"><asp:HyperLink runat="server" NavigateUrl="~/newTypeRedirect.ashx?TypeId=34&ToolTip=扶贫工作" ForeColor="White"><img src="img/fuping.png" width="60" height="60"></asp:HyperLink></td>
+        <td width="6%">&nbsp;</td>
+        <td width="8%" align="center"><asp:HyperLink runat="server" NavigateUrl="~/newTypeRedirect.ashx?TypeId=35&ToolTip=社保就业" ForeColor="White"><img src="img/shebaojie.png" width="60" height="60"></asp:HyperLink></td>
        
+        <td width="8%" align="center">&nbsp;</td>
+        <td width="8%" align="center"></td>
       </tr>
       <tr>
-        <td class="top2018"><asp:HyperLink runat="server" NavigateUrl="~/speciaTypelList.aspx?TypeId=31&ToolTip=财政预算决算" ForeColor="White">财政预算决算</asp:HyperLink></td>
+        <td class="top2018"><asp:HyperLink runat="server" NavigateUrl="~/newTypeRedirect.ashx?TypeId=31&ToolTip=财政预算决算" ForeColor="White">财政预算决算</asp:HyperLink></td>
         <td>&nbsp;</td>
-        <td class="top2018"><asp:HyperLink runat="server" NavigateUrl="~/class.aspx?TypeId=32&ToolTip=环境保护" ForeColor="White">环境保护</asp:HyperLink></td>
+        <td class="top2018"><asp:HyperLink runat="server" NavigateUrl="~/newTypeRedirect.ashx?TypeId=32&ToolTip=环境保护" ForeColor="White">环境保护</asp:HyperLink></td>
         <td>&nbsp;</td>
-        <td class="top2018"><asp:HyperLink runat="server" NavigateUrl="~/class.aspx?TypeId=33&ToolTip=安全生产" ForeColor="White">安全生产</asp:HyperLink></td>
+        <td class="top2018"><asp:HyperLink runat="server" NavigateUrl="~/newTypeRedirect.ashx?TypeId=33&ToolTip=安全生产" ForeColor="White">安全生产</asp:HyperLink></td>
         <td>&nbsp;</td>
-        <td class="top2018"><asp:HyperLink runat="server" NavigateUrl="~/class.aspx?TypeId=34&ToolTip=扶贫工作" ForeColor="White">扶贫工作</asp:HyperLink></td>
+        <td class="top2018"><asp:HyperLink runat="server" NavigateUrl="~/newTypeRedirect.ashx?TypeId=34&ToolTip=扶贫工作" ForeColor="White">扶贫工作</asp:HyperLink></td>
         <td>&nbsp;</td>
-        <td class="top2018"><asp:HyperLink runat="server" NavigateUrl="~/class.aspx?TypeId=35&ToolTip=社保就业" ForeColor="White">社保就业</asp:HyperLink></td>
-        </tr>
+        <td class="top2018"><asp:HyperLink runat="server" NavigateUrl="~/newTypeRedirect.ashx?TypeId=35&ToolTip=社保就业" ForeColor="White">社保就业</asp:HyperLink></td>
+        <td class="top2018">&nbsp;</td>
+        <td class="top2018"></td>
+      </tr>
       <tr>
-        <td align="center"><asp:HyperLink runat="server" NavigateUrl="~/class.aspx?TypeId=36&ToolTip=征地拆迁" ForeColor="White"><img src="img/zhedi.png" width="60" height="60"></asp:HyperLink></td>
+        <td align="center"><asp:HyperLink runat="server" NavigateUrl="~/newTypeRedirect.ashx?TypeId=36&ToolTip=征地拆迁" ForeColor="White"><img src="img/zhedi.png" width="60" height="60"></asp:HyperLink></td>
         <td>&nbsp;</td>
-        <td align="center"><asp:HyperLink runat="server" NavigateUrl="~/class.aspx?TypeId=37&ToolTip=科教文卫" ForeColor="White"><img src="img/kejiao.png" width="60" height="60"></asp:HyperLink></td>
+        <td align="center"><asp:HyperLink runat="server" NavigateUrl="~/newTypeRedirect.ashx?TypeId=37&ToolTip=科教文卫" ForeColor="White"><img src="img/kejiao.png" width="60" height="60"></asp:HyperLink></td>
         <td>&nbsp;</td>
-        <td align="center"><asp:HyperLink runat="server" NavigateUrl="~/class.aspx?TypeId=38&ToolTip=公共资源" ForeColor="White"><img src="img/gonsxiy.png" width="60" height="60"></asp:HyperLink></td>
+        <td align="center"><asp:HyperLink runat="server" NavigateUrl="~/newTypeRedirect.ashx?TypeId=38&ToolTip=公共资源" ForeColor="White"><img src="img/gonsxiy.png" width="60" height="60"></asp:HyperLink></td>
         <td>&nbsp;</td>
-        <td align="center"><asp:HyperLink runat="server" NavigateUrl="~/class.aspx?TypeId=39&ToolTip=保障性住房" ForeColor="White"><img src="img/baozhang.png" width="60" height="60"></asp:HyperLink></td>
+        <td align="center"><asp:HyperLink runat="server" NavigateUrl="~/newTypeRedirect.ashx?TypeId=39&ToolTip=保障性住房" ForeColor="White"><img src="img/baozhang.png" width="60" height="60"></asp:HyperLink></td>
         <td>&nbsp;</td>
-        <td align="center"><asp:HyperLink runat="server" NavigateUrl="~/class.aspx?TypeId=40&ToolTip=重点项目" ForeColor="White"><img src="img/zhongdda.png" width="60" height="60"></asp:HyperLink></td>
-        </tr>
+        <td align="center"><asp:HyperLink runat="server" NavigateUrl="~/newTypeRedirect.ashx?TypeId=40&ToolTip=重点项目" ForeColor="White"><img src="img/zhongdda.png" width="60" height="60"></asp:HyperLink></td>
+        <td align="center">&nbsp;</td>
+        <td align="center"><asp:HyperLink runat="server" NavigateUrl="~/newTypeRedirect.ashx?TypeId=134&ToolTip=警务信息" ForeColor="White"><img src="img/jwxx.png" width="60" height="60"></asp:HyperLink></td>
+      </tr>
       <tr>
-         <td class="top2018"><asp:HyperLink runat="server" NavigateUrl="~/class.aspx?TypeId=36&ToolTip=征地拆迁" ForeColor="White">征地拆迁</asp:HyperLink></td>
+         <td class="top2018"><asp:HyperLink runat="server" NavigateUrl="~/newTypeRedirect.ashx?TypeId=36&ToolTip=征地拆迁" ForeColor="White">征地拆迁</asp:HyperLink></td>
         <td>&nbsp;</td>
-        <td class="top2018"><asp:HyperLink runat="server" NavigateUrl="~/class.aspx?TypeId=37&ToolTip=科教文卫" ForeColor="White">科教文卫</asp:HyperLink></td>
+        <td class="top2018"><asp:HyperLink runat="server" NavigateUrl="~/newTypeRedirect.ashx?TypeId=37&ToolTip=科教文卫" ForeColor="White">科教文卫</asp:HyperLink></td>
         <td>&nbsp;</td>
-        <td class="top2018"><asp:HyperLink runat="server" NavigateUrl="~/class.aspx?TypeId=38&ToolTip=公共资源" ForeColor="White">公共资源</asp:HyperLink></td>
+        <td class="top2018"><asp:HyperLink runat="server" NavigateUrl="~/newTypeRedirect.ashx?TypeId=38&ToolTip=公共资源" ForeColor="White">公共资源</asp:HyperLink></td>
         <td>&nbsp;</td>
-        <td class="top2018"><asp:HyperLink runat="server" NavigateUrl="~/class.aspx?TypeId=39&ToolTip=保障性住房" ForeColor="White">保障性住房</asp:HyperLink></td>
+        <td class="top2018"><asp:HyperLink runat="server" NavigateUrl="~/newTypeRedirect.ashx?TypeId=39&ToolTip=保障性住房" ForeColor="White">保障性住房</asp:HyperLink></td>
         <td>&nbsp;</td>
-        <td class="top2018"><asp:HyperLink runat="server" NavigateUrl="~/class.aspx?TypeId=40&ToolTip=重点项目" ForeColor="White">重点项目</asp:HyperLink></td>
-        </tr>
+        <td class="top2018"><asp:HyperLink runat="server" NavigateUrl="~/newTypeRedirect.ashx?TypeId=40&ToolTip=重点项目" ForeColor="White">重点项目</asp:HyperLink></td>
+        <td class="top2018">&nbsp;</td>
+        <td class="top2018"><asp:HyperLink runat="server" NavigateUrl="~/newTypeRedirect.ashx?TypeId=134&ToolTip=警务信息" ForeColor="White">警务信息</asp:HyperLink></td>
+      </tr>
     </table></td>
   </tr>
 </table>
@@ -458,9 +480,9 @@ $(".yx-rotaion").yx_rotaion({auto:true});
      <div class="ent_c">
 			       <div class="bq">
 					      <ul id="oUlTab">
-                          <li class="on" ><a href="/class.aspx?TypeId=3&ToolTip=通知公告">通知公告</a></li>
-	                          <li ><a href="http://www.gd.gov.cn/ywdt/" target="_blank">政声传递</a></li>
-		                     
+                            <li class="on" ><a href="/newTypeRedirect.ashx?TypeId=3&ToolTip=通知公告">通知公告</a></li>
+	                         <li ><a href="javascript:void(0)" onclick="OpenUrl('http://www.gd.gov.cn/ywdt/')">政声传递</a></li>
+		                     <li ><a href="javascript:void(0)" onclick="OpenUrl('http://wsbs.zhaoqing.gov.cn/portal/website/online/online!findCompletedApprove.action?areacode=441285')">办件结果</a></li>
                           </ul>
                     </div>
                     <div class="img-ios-all"><img src="images/line.jpg" width="100%" height="1"></div>
@@ -504,7 +526,7 @@ $(".yx-rotaion").yx_rotaion({auto:true});
                                                                              }else{
 	                                                                              descTitle=json.title.substr(0,20)+"...";							
                                                                              }
-					                                     $("#zscd").append("<tr><td><img src='img/arrow_small_black.gif' width='10' height='10'><a target='_blank' href='"+json.link+"'>"+descTitle+"</a> </td><td class='top25_text'>[ "+json.pubDate+"]</td></tr>");
+					                                     $("#zscd").append("<tr><td><img src='img/arrow_small_black.gif' width='10' height='10'><a target='_blank'  href='"+json.link+"'>"+descTitle+"</a> </td><td class='top25_text'>[ "+json.pubDate+"]</td></tr>");
 					                                }
 				                                  })
 			                                },
@@ -526,7 +548,14 @@ $(".yx-rotaion").yx_rotaion({auto:true});
 						  </div>						 
 					 </div>
 
-									 
+         			<div class="bq_d" id="oDivTab3"style="display:none" >
+					      <div class="bq_n">
+                              <div class="c4">
+                                  <iframe name="content_frame"   marginwidth=0 marginheight=0 width=100% height=210 src="http://wsbs.zhaoqing.gov.cn/portal/website/online/online!findCompletedApprove.action?areacode=441285" frameborder=0></iframe>
+					          </div>
+						  </div>						 
+					 </div>
+								                              
 					 </div>
 
 		    </td>
@@ -579,14 +608,14 @@ $(".yx-rotaion").yx_rotaion({auto:true});
                <td width="127" height="136"  class="top25_bg" ><p class="top21I_bg"><asp:HyperLink runat="server" NavigateUrl="~/Info.aspx?id=13&ToolTip=投资环境" ForeColor="White"><img src="img/HUANJING.png" width="46" height="46"></asp:HyperLink></p>
                  <p  class="top21k_bg"><asp:HyperLink runat="server" NavigateUrl="~/Info.aspx?id=13&ToolTip=投资环境" ForeColor="White">投资环境</asp:HyperLink></p></td>
             <td width="31">&nbsp;</td>
-            <td width="127" class="top26_bg"><p class="top21I_bg"><asp:HyperLink runat="server" NavigateUrl="~/class.aspx?TypeId=52&ToolTip=优惠政策" ForeColor="White"><img src="img/youhuizc.png" width="46" height="46"></asp:HyperLink></p>
-                 <p  class="top21k_bg"><asp:HyperLink runat="server" NavigateUrl="~/class.aspx?TypeId=52&ToolTip=优惠政策" ForeColor="White">优惠政策</asp:HyperLink></p></td>
+            <td width="127" class="top26_bg"><p class="top21I_bg"><asp:HyperLink runat="server" NavigateUrl="~/newTypeRedirect.ashx?TypeId=52&ToolTip=优惠政策" ForeColor="White"><img src="img/youhuizc.png" width="46" height="46"></asp:HyperLink></p>
+                 <p  class="top21k_bg"><asp:HyperLink runat="server" NavigateUrl="~/newTypeRedirect.ashx?TypeId=52&ToolTip=优惠政策" ForeColor="White">优惠政策</asp:HyperLink></p></td>
             <td width="27">&nbsp;</td>
-            <td width="127" class="top27_bg"><p class="top21I_bg"><asp:HyperLink runat="server" NavigateUrl="~/class.aspx?TypeId=53&ToolTip=招商项目" ForeColor="White"><img src="img/zhangsehn.png" width="46" height="46"></asp:HyperLink></p>
-                 <p  class="top21k_bg"><asp:HyperLink runat="server" NavigateUrl="~/class.aspx?TypeId=53&ToolTip=招商项目" ForeColor="White">招商项目</asp:HyperLink></p></td>
+            <td width="127" class="top27_bg"><p class="top21I_bg"><asp:HyperLink runat="server" NavigateUrl="~/newTypeRedirect.ashx?TypeId=53&ToolTip=招商项目" ForeColor="White"><img src="img/zhangsehn.png" width="46" height="46"></asp:HyperLink></p>
+                 <p  class="top21k_bg"><asp:HyperLink runat="server" NavigateUrl="~/newTypeRedirect.ashx?TypeId=53&ToolTip=招商项目" ForeColor="White">招商项目</asp:HyperLink></p></td>
             <td width="25" >&nbsp;</td>
-            <td width="142" class="top28_bg"><p class="top21I_bg"><asp:HyperLink runat="server" NavigateUrl="~/class.aspx?TypeId=54&ToolTip=投资流程" ForeColor="White"><img src="img/liucheng.png" width="46" height="46"></asp:HyperLink></p>
-                 <p  class="top21k_bg"><asp:HyperLink runat="server" NavigateUrl="~/class.aspx?TypeId=54&ToolTip=投资流程" ForeColor="White">投资流程</asp:HyperLink></p></td>
+            <td width="142" class="top28_bg"><p class="top21I_bg"><asp:HyperLink runat="server" NavigateUrl="~/newTypeRedirect.ashx?TypeId=54&ToolTip=投资流程" ForeColor="White"><img src="img/liucheng.png" width="46" height="46"></asp:HyperLink></p>
+                 <p  class="top21k_bg"><asp:HyperLink runat="server" NavigateUrl="~/newTypeRedirect.ashx?TypeId=54&ToolTip=投资流程" ForeColor="White">投资流程</asp:HyperLink></p></td>
   </tr>
 </table></td>
       </tr>
@@ -603,14 +632,14 @@ $(".yx-rotaion").yx_rotaion({auto:true});
       <tr>
         <td><table width="100%" border="0" cellspacing="0" cellpadding="0" class="top209">
   <tr>
-               <td width="150" height="136"  class="top21_bg" ><p class="top21I_bg"><asp:HyperLink runat="server" NavigateUrl="~/class.aspx?TypeId=55&ToolTip=人才政策" ForeColor="White"><img src="img/recaisds.png" width="40" height="46"></asp:HyperLink></p>
-                 <p  class="top21k_bg"><asp:HyperLink runat="server" NavigateUrl="~/class.aspx?TypeId=55&ToolTip=人才政策" ForeColor="White">人才政策</asp:HyperLink></p></td>
+               <td width="150" height="136"  class="top21_bg" ><p class="top21I_bg"><asp:HyperLink runat="server" NavigateUrl="~/newTypeRedirect.ashx?TypeId=55&ToolTip=人才政策" ForeColor="White"><img src="img/recaisds.png" width="40" height="46"></asp:HyperLink></p>
+                 <p  class="top21k_bg"><asp:HyperLink runat="server" NavigateUrl="~/newTypeRedirect.ashx?TypeId=55&ToolTip=人才政策" ForeColor="White">人才政策</asp:HyperLink></p></td>
             <td width="16">&nbsp;</td>
-            <td width="176" class="top22_bg"><p class="top21I_bg"><asp:HyperLink runat="server" NavigateUrl="~/class.aspx?TypeId=56&ToolTip=就业培训" ForeColor="White"><img src="img/peixun.png" width="54" height="46"></asp:HyperLink></p>
-                 <p  class="top21k_bg"><asp:HyperLink runat="server" NavigateUrl="~/class.aspx?TypeId=56&ToolTip=就业培训" ForeColor="White">就业培训</asp:HyperLink></p></td>
+            <td width="176" class="top22_bg"><p class="top21I_bg"><asp:HyperLink runat="server" NavigateUrl="~/newTypeRedirect.ashx?TypeId=56&ToolTip=就业培训" ForeColor="White"><img src="img/peixun.png" width="54" height="46"></asp:HyperLink></p>
+                 <p  class="top21k_bg"><asp:HyperLink runat="server" NavigateUrl="~/newTypeRedirect.ashx?TypeId=56&ToolTip=就业培训" ForeColor="White">就业培训</asp:HyperLink></p></td>
             <td width="15">&nbsp;</td>
-            <td class="top23_bg"><p class="top21I_bg"><asp:HyperLink runat="server" NavigateUrl="~/class.aspx?TypeId=57&ToolTip=人才计划" ForeColor="White"><img src="img/User.png" width="46" height="46"></asp:HyperLink></p>
-                 <p  class="top21k_bg"><asp:HyperLink runat="server" NavigateUrl="~/class.aspx?TypeId=57&ToolTip=人才计划" ForeColor="White">人才计划</asp:HyperLink></p></td>
+            <td class="top23_bg"><p class="top21I_bg"><asp:HyperLink runat="server" NavigateUrl="~/newTypeRedirect.ashx?TypeId=57&ToolTip=人才计划" ForeColor="White"><img src="img/User.png" width="46" height="46"></asp:HyperLink></p>
+                 <p  class="top21k_bg"><asp:HyperLink runat="server" NavigateUrl="~/newTypeRedirect.ashx?TypeId=57&ToolTip=人才计划" ForeColor="White">人才计划</asp:HyperLink></p></td>
   </tr>
 </table></td>
       </tr>
@@ -687,29 +716,29 @@ $(".yx-rotaion").yx_rotaion({auto:true});
 <div class="h-wtbz">
 
     <p>    
-        <a href="http://www.zqgxjjjc.gov.cn/" target="_blank" style="margin: 0 10px;"  >区纪检监察网</a>
+        <a href="javascript:void(0)" onclick="OpenUrl('http://www.zqgxjjjc.gov.cn/')" style="margin: 0 10px;"  >区纪检监察网</a>
                     
                 
-        <a href="http://www.job0758.com.cn/V3/" target="_blank" style="margin: 0 10px;">区人才网</a>
+        <a href="javascript:void(0)" onclick="OpenUrl('http://www.job0758.com.cn/V3/')" style="margin: 0 10px;">区人才网</a>
                     
                 
-        <a href="http://www.zqhtmse.com/gd/index.asp" target="_blank" style="margin: 0 10px;">区中小企业网</a>
+        <a href="javascript:void(0)" onclick="OpenUrl('http://www.zqhtmse.com/gd/index.asp')" style="margin: 0 10px;">区中小企业网</a>
                     
                 
-        <a href="http://www.zqhzepb.gov.cn/" target="_blank" style="margin: 0 10px;">区环保局门户网</a>
+        <a href="javascript:void(0)" onclick="OpenUrl('http://www.zqhzepb.gov.cn/')" style="margin: 0 10px;">区环保局门户网</a>
                     
                 
-        <a href="http://www.padw.gov.cn/" target="_blank" style="margin: 0 10px;">肇庆平安大旺</a>
+        <a href="javascript:void(0)" onclick="OpenUrl('http://www.padw.gov.cn/')"  style="margin: 0 10px;">肇庆平安大旺</a>
                     
                 
-        <a href="http://www.zqhzst.gov.cn/" target="_blank" style="margin: 0 10px;">区科技信息网</a>
+        <a href="javascript:void(0)" onclick="OpenUrl('http://www.zqhzst.gov.cn/')" style="margin: 0 10px;">区科技信息网</a>
                     
                 
-        <a href="http://www.gxld.gov.cn/" target="_blank" style="margin: 0 10px;">区劳动和社会保障局</a>
+        <a href="javascript:void(0)" onclick="OpenUrl('http://www.gxld.gov.cn/')" style="margin: 0 10px;">区劳动和社会保障局</a>
                     
-            <a href="http://www.zqhzsafety.gov.cn/" target="_blank" style="margin: 0 10px;">区安全监管网</a>
+            <a href="javascript:void(0)" onclick="OpenUrl('http://www.zqhzsafety.gov.cn/')"  style="margin: 0 10px;">区安全监管网</a>
               
-        <a href="http://www.zqdwedu.com/webschool/News/" target="_blank" style="margin: 0 10px;">区教育信息网</a>
+        <a href="javascript:void(0)" onclick="OpenUrl('http://www.zqdwedu.com/webschool/News/')"  style="margin: 0 10px;">区教育信息网</a>
     </p>
 </div>
   
@@ -745,7 +774,7 @@ $(".fullSlide").slide({
   <tr>
     
     <td width="561" >
-    <p class="headzq_logo_text211" >肇庆高新网版权所有，未经书面授权禁止使用。粤ICP备09172506 </p>
+    <p class="headzq_logo_text211" >肇庆高新网版权所有，未经书面授权禁止使用。粤ICP备09172506 &nbsp; 网站标识码:4412910009 </p>
 <p class="headzq_logo_text211" >主办单位：肇庆国家高新技术产业开发区</p>
 <p class="headzq_logo_text211" >技术开发：肇庆国家高新技术产业开发区肇庆高新采编中心 </p>
 <p class="headzq_logo_text211" >地 址：高新区政德大街劳动力大楼（行政服务中心）四楼西翼</p>
@@ -758,10 +787,10 @@ $(".fullSlide").slide({
         <tr>
           
           <td width="9%"><img src="images/2wm.png" width="100" height="100"></td>
-            <td width="9%"><a href="http://bszs.conac.cn/sitename?method=show&id=33B99A8643E24B72E053022819AC32CC" target="_blank"><img src="images/red.png" width="80" height="80"></a></td>
+            <td width="9%"><a href="javascript:void(0)" onclick="OpenUrl('http://bszs.conac.cn/sitename?method=show&id=33B99A8643E24B72E053022819AC32CC')"><img src="images/red.png" width="80" height="80"></a></td>
           
-          <td width="9%"><a href="http://121.43.68.40/exposure/jiucuo.html?site_code=4412910008&url=http%3A%2F%2Fwww.zqgx.gov.cn%2F" target="_blank"><img src="images/jiucuo.png" width="110" height="55"></a></td>
-          <td width="9%" class="headzq_right_text"><a href="http://210.76.65.188/newwebsite/main.jsp?id=4412&adir=&wy=1" target="_blank"><img src="images/jblong.jpg" width="226" height="93"></a></td>
+          <td width="9%"><a href="javascript:void(0)" onclick="OpenUrl('http://121.43.68.40/exposure/jiucuo.html?site_code=4412910008&url=http%3A%2F%2Fwww.zqgx.gov.cn%2F')"><img src="images/jiucuo.png" width="110" height="55"></a></td>
+          <td width="9%" class="headzq_right_text"><a href="javascript:void(0)" onclick="OpenUrl('http://210.76.65.188/newwebsite/main.jsp?id=4412&adir=&wy=1')"><img src="images/jblong.jpg" width="226" height="93"></a></td>
         </tr>
         
       </table></td>
@@ -810,7 +839,7 @@ $(".fullSlide").slide({
 
         var content3 = "<img width='290' height='290' src='images/DZB.png' />";//弹出图片
 
-        T$('click_test3').onclick = function () { TINY.box.show(content3, 0, 0, 0, 1) }
+        T$('click_test3').onclick = function () {window.location.href="/DZB/Default.aspx"; }
         
 
     	 //查找

@@ -2,7 +2,8 @@
 using System.Data;
 using System.Text;
 using System.Data.SqlClient;
-using DWGX.Data;//Please add references
+using DWGX.Data;
+
 namespace DWGX.DAL
 {
 	/// <summary>
@@ -46,9 +47,9 @@ namespace DWGX.DAL
 		{
 			StringBuilder strSql=new StringBuilder();
 			strSql.Append("insert into tb_NewsType(");
-			strSql.Append("cTypeName,iClassId,iDesc,dCreateTime,cPic,iShow,parentid)");
+			strSql.Append("cTypeName,iClassId,iDesc,dCreateTime,cPic,iShow,parentid,linkUrl)");
 			strSql.Append(" values (");
-			strSql.Append("@cTypeName,@iClassId,@iDesc,@dCreateTime,@cPic,@iShow,@parentid)");
+			strSql.Append("@cTypeName,@iClassId,@iDesc,@dCreateTime,@cPic,@iShow,@parentid,@linkUrl)");
 			strSql.Append(";select @@IDENTITY");
 			SqlParameter[] parameters = {
 					new SqlParameter("@cTypeName", SqlDbType.VarChar,50),
@@ -57,7 +58,8 @@ namespace DWGX.DAL
 					new SqlParameter("@dCreateTime", SqlDbType.DateTime),
 					new SqlParameter("@cPic", SqlDbType.VarChar,50),
 					new SqlParameter("@iShow", SqlDbType.Int,4),
-					new SqlParameter("@parentid", SqlDbType.Int,4)};
+					new SqlParameter("@parentid", SqlDbType.Int,4),
+					new SqlParameter("@linkUrl", SqlDbType.VarChar,500)};
 			parameters[0].Value = model.cTypeName;
 			parameters[1].Value = model.iClassId;
 			parameters[2].Value = model.iDesc;
@@ -65,6 +67,7 @@ namespace DWGX.DAL
 			parameters[4].Value = model.cPic;
 			parameters[5].Value = model.iShow;
 			parameters[6].Value = model.parentid;
+			parameters[7].Value = model.linkUrl;
 
 			object obj = SqlHelper.GetSingle(strSql.ToString(),parameters);
 			if (obj == null)
@@ -89,7 +92,8 @@ namespace DWGX.DAL
 			strSql.Append("dCreateTime=@dCreateTime,");
 			strSql.Append("cPic=@cPic,");
 			strSql.Append("iShow=@iShow,");
-			strSql.Append("parentid=@parentid");
+			strSql.Append("parentid=@parentid,");
+			strSql.Append("linkUrl=@linkUrl");
 			strSql.Append(" where ID=@ID");
 			SqlParameter[] parameters = {
 					new SqlParameter("@cTypeName", SqlDbType.VarChar,50),
@@ -99,6 +103,7 @@ namespace DWGX.DAL
 					new SqlParameter("@cPic", SqlDbType.VarChar,50),
 					new SqlParameter("@iShow", SqlDbType.Int,4),
 					new SqlParameter("@parentid", SqlDbType.Int,4),
+					new SqlParameter("@linkUrl", SqlDbType.VarChar,500),
 					new SqlParameter("@ID", SqlDbType.Int,4)};
 			parameters[0].Value = model.cTypeName;
 			parameters[1].Value = model.iClassId;
@@ -107,9 +112,10 @@ namespace DWGX.DAL
 			parameters[4].Value = model.cPic;
 			parameters[5].Value = model.iShow;
 			parameters[6].Value = model.parentid;
-			parameters[7].Value = model.ID;
+			parameters[7].Value = model.linkUrl;
+			parameters[8].Value = model.ID;
 
-			int rows=SqlHelper.ExecuteSql(strSql.ToString(),parameters);
+			int rows= SqlHelper.ExecuteSql(strSql.ToString(),parameters);
 			if (rows > 0)
 			{
 				return true;
@@ -134,7 +140,7 @@ namespace DWGX.DAL
 			};
 			parameters[0].Value = ID;
 
-			int rows=SqlHelper.ExecuteSql(strSql.ToString(),parameters);
+			int rows= SqlHelper.ExecuteSql(strSql.ToString(),parameters);
 			if (rows > 0)
 			{
 				return true;
@@ -152,7 +158,7 @@ namespace DWGX.DAL
 			StringBuilder strSql=new StringBuilder();
 			strSql.Append("delete from tb_NewsType ");
 			strSql.Append(" where ID in ("+IDlist + ")  ");
-			int rows=SqlHelper.ExecuteSql(strSql.ToString());
+			int rows= SqlHelper.ExecuteSql(strSql.ToString());
 			if (rows > 0)
 			{
 				return true;
@@ -171,7 +177,7 @@ namespace DWGX.DAL
 		{
 			
 			StringBuilder strSql=new StringBuilder();
-			strSql.Append("select  top 1 ID,cTypeName,iClassId,iDesc,dCreateTime,cPic,iShow,parentid from tb_NewsType ");
+			strSql.Append("select  top 1 ID,cTypeName,iClassId,iDesc,dCreateTime,cPic,iShow,parentid,linkUrl from tb_NewsType ");
 			strSql.Append(" where ID=@ID");
 			SqlParameter[] parameters = {
 					new SqlParameter("@ID", SqlDbType.Int,4)
@@ -179,7 +185,7 @@ namespace DWGX.DAL
 			parameters[0].Value = ID;
 
 			DWGX.Model.NewsType model=new DWGX.Model.NewsType();
-			DataSet ds=SqlHelper.Query(strSql.ToString(),parameters);
+			DataSet ds= SqlHelper.Query(strSql.ToString(),parameters);
 			if(ds.Tables[0].Rows.Count>0)
 			{
 				return DataRowToModel(ds.Tables[0].Rows[0]);
@@ -231,6 +237,10 @@ namespace DWGX.DAL
 				{
 					model.parentid=int.Parse(row["parentid"].ToString());
 				}
+				if(row["linkUrl"]!=null)
+				{
+					model.linkUrl=row["linkUrl"].ToString();
+				}
 			}
 			return model;
 		}
@@ -241,7 +251,7 @@ namespace DWGX.DAL
 		public DataSet GetList(string strWhere)
 		{
 			StringBuilder strSql=new StringBuilder();
-			strSql.Append("select ID,cTypeName,iClassId,iDesc,dCreateTime,cPic,iShow,parentid ");
+			strSql.Append("select ID,cTypeName,iClassId,iDesc,dCreateTime,cPic,iShow,parentid,linkUrl ");
 			strSql.Append(" FROM tb_NewsType ");
 			if(strWhere.Trim()!="")
 			{
@@ -261,7 +271,7 @@ namespace DWGX.DAL
 			{
 				strSql.Append(" top "+Top.ToString());
 			}
-			strSql.Append(" ID,cTypeName,iClassId,iDesc,dCreateTime,cPic,iShow,parentid ");
+			strSql.Append(" ID,cTypeName,iClassId,iDesc,dCreateTime,cPic,iShow,parentid,linkUrl ");
 			strSql.Append(" FROM tb_NewsType ");
 			if(strWhere.Trim()!="")
 			{
@@ -340,7 +350,7 @@ namespace DWGX.DAL
 			parameters[4].Value = 0;
 			parameters[5].Value = 0;
 			parameters[6].Value = strWhere;	
-			return SqlHelper.RunProcedure("UP_GetRecordByPage",parameters,"ds");
+			return sqlDbHelper.RunProcedure("UP_GetRecordByPage",parameters,"ds");
 		}*/
 
 		#endregion  BasicMethod

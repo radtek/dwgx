@@ -40,7 +40,7 @@ public partial class _class : System.Web.UI.Page
 
         //大旺新闻
         string _sqlStr;
-        _sqlStr = "select ID,cTitle,dCreateTime,cPutPicPath from tb_News " + whereStr + " order by dCreateTime desc";
+        _sqlStr = "select a.ID,a.cTitle,a.dCreateTime,a.cPutPicPath,b.cTypeName from tb_News a left join tb_NewsType b on  a.iTypeId = b.ID " + whereStr + " order by a.dCreateTime desc";
         DataSet _dsNews = DWGX.Data.SqlHelper.Query(_sqlStr);
         PagedDataSource pds = new PagedDataSource();
         pds.DataSource = _dsNews.Tables[0].DefaultView;

@@ -32,6 +32,7 @@ public partial class Manage_specialTypeAdd : System.Web.UI.Page
         _specialType.dCreateTime = DateTime.Now;
         _specialType.cPic = "";
         _specialType.iShow = 1;
+        _specialType.linkUrl = clbLinkUrl.Text;
 
         //文件上传
         if (uploadFile.HasFile)

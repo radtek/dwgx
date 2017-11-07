@@ -38,12 +38,20 @@ public partial class Manage_News_List : System.Web.UI.Page
         string whereStr = " where N.iTypeId = NT.ID";
         reqTypeName = CommonClass.UrlEnCode(Request.QueryString["cTypeName"], System.Text.Encoding.UTF8);
 
-        //如果是专题专栏，则跳转到专题专栏类别
-        if (reqTypeId != null && (int.Parse(reqTypeId) == 5 || int.Parse(reqTypeId) == 31))
+        //如果类别表被标识为栏目类型(1)，则跳转到二级版面添加页面
+        string _existsStr = "select 1 from tb_NewsType where iDesc=1 and ID="+ reqTypeId;
+        if (DWGX.Data.SqlHelper.Exists(_existsStr))
         {
-            Response.Redirect("specialTypeList.aspx?TypeId="+ reqTypeId);
-            return;  
+            Response.Redirect("specialTypeList.aspx?TypeId=" + reqTypeId);
+            return;
         }
+
+
+        //if (reqTypeId != null && (int.Parse(reqTypeId) == 5 || int.Parse(reqTypeId) == 31))
+        //{
+        //    Response.Redirect("specialTypeList.aspx?TypeId="+ reqTypeId);
+        //    return;  
+        //}
 
 
         if (string.IsNullOrEmpty(reqTypeId) == false)

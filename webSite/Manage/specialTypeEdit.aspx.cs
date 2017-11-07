@@ -29,6 +29,7 @@ public partial class Manage_specialTypeEdit : System.Web.UI.Page
             delePic.Visible = !string.IsNullOrEmpty(_specialType.cPic);
             delePic.NavigateUrl = "special_Pic_Del.aspx?id=" + id+ "&typeId="+typeId;
             clbName.Text = _specialType.cTypeName.ToString();
+            clbLinkUrl.Text = _specialType.linkUrl.ToString();
         }
     }
 
@@ -39,6 +40,7 @@ public partial class Manage_specialTypeEdit : System.Web.UI.Page
         if (_specialType != null)
         {
             _specialType.cTypeName = clbName.Text;
+            _specialType.linkUrl = clbLinkUrl.Text;
             //文件上传
             if (upLoadFile.HasFile)
             {

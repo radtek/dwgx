@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Data;
 using System.Collections.Generic;
-using DWGX.Model;
+
 namespace DWGX.BLL
 {
 	/// <summary>
@@ -54,7 +54,13 @@ namespace DWGX.BLL
 			
 			return dal.Delete(ID);
 		}
-
+		/// <summary>
+		/// 删除一条数据
+		/// </summary>
+		public bool DeleteList(string IDlist )
+		{
+			return dal.DeleteList(IDlist );
+		}
 
 		/// <summary>
 		/// 得到一个对象实体
@@ -64,7 +70,7 @@ namespace DWGX.BLL
 			
 			return dal.GetModel(ID);
 		}
-        
+
 
 		/// <summary>
 		/// 获得数据列表

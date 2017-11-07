@@ -18,6 +18,7 @@ namespace DWGX.Model
 		private string _cpic;
 		private int? _ishow=0;
 		private int _parentid=0;
+		private string _linkurl;
 		/// <summary>
 		/// 
 		/// </summary>
@@ -81,6 +82,14 @@ namespace DWGX.Model
 		{
 			set{ _parentid=value;}
 			get{return _parentid;}
+		}
+		/// <summary>
+		/// 该类别的外部链接URL
+		/// </summary>
+		public string linkUrl
+		{
+			set{ _linkurl=value;}
+			get{return _linkurl;}
 		}
 		#endregion Model
 
