@@ -6,8 +6,10 @@ using System.Web;
 public class newTypeRedirect : IHttpHandler {
 
     public void ProcessRequest (HttpContext context) {
-        context.Response.ContentType = "text/plain";
+        context.Response.ContentType = "application/json";
         //context.Response.Write("Hello World");
+
+        string _id =  context.Request.Form["str"];
 
         //防sql注入
         SqlChecker SqlChecker = new SqlChecker(context.Request, context.Response, "http://" + BCW.Common.Utils.GetDomain());
@@ -33,7 +35,7 @@ public class newTypeRedirect : IHttpHandler {
         {
             if (_newType != null && string.IsNullOrEmpty(_newType.linkUrl) == false)
             {
-                 context.Response.Redirect(_newType.linkUrl);
+                context.Response.Redirect(_newType.linkUrl);
                 return;
             }
             else

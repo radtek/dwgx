@@ -34,10 +34,10 @@ F:\zhc\work\dwgx\webSite\DWGX.BLL\obj\Debug\DWGX.BLL.dll
 F:\zhc\work\dwgx\webSite\DWGX.BLL\obj\Debug\DWGX.BLL.pdb
 D:\work\dwgx\webSite\DWGX.BLL\bin\Debug\DWGX.BLL.dll
 D:\work\dwgx\webSite\DWGX.BLL\bin\Debug\DWGX.BLL.pdb
+D:\work\dwgx\webSite\DWGX.BLL\bin\Debug\BCW.Common.dll
 D:\work\dwgx\webSite\DWGX.BLL\bin\Debug\DWGX.DAL.dll
 D:\work\dwgx\webSite\DWGX.BLL\bin\Debug\DWGX.MODAL.dll
 D:\work\dwgx\webSite\DWGX.BLL\bin\Debug\DWGX.DATA.dll
-D:\work\dwgx\webSite\DWGX.BLL\bin\Debug\BCW.Common.dll
 D:\work\dwgx\webSite\DWGX.BLL\bin\Debug\DWGX.DAL.pdb
 D:\work\dwgx\webSite\DWGX.BLL\bin\Debug\DWGX.MODAL.pdb
 D:\work\dwgx\webSite\DWGX.BLL\bin\Debug\DWGX.DATA.pdb

@@ -635,8 +635,8 @@ $(".yx-rotaion").yx_rotaion({auto:true});
                <td width="150" height="136"  class="top21_bg" ><p class="top21I_bg"><asp:HyperLink runat="server" NavigateUrl="~/newTypeRedirect.ashx?TypeId=55&ToolTip=人才政策" ForeColor="White"><img src="img/recaisds.png" width="40" height="46"></asp:HyperLink></p>
                  <p  class="top21k_bg"><asp:HyperLink runat="server" NavigateUrl="~/newTypeRedirect.ashx?TypeId=55&ToolTip=人才政策" ForeColor="White">人才政策</asp:HyperLink></p></td>
             <td width="16">&nbsp;</td>
-            <td width="176" class="top22_bg"><p class="top21I_bg"><asp:HyperLink runat="server" NavigateUrl="~/newTypeRedirect.ashx?TypeId=56&ToolTip=就业培训" ForeColor="White"><img src="img/peixun.png" width="54" height="46"></asp:HyperLink></p>
-                 <p  class="top21k_bg"><asp:HyperLink runat="server" NavigateUrl="~/newTypeRedirect.ashx?TypeId=56&ToolTip=就业培训" ForeColor="White">就业培训</asp:HyperLink></p></td>
+            <td width="176" class="top22_bg"><p class="top21I_bg"><asp:HyperLink runat="server" NavigateUrl="~/rcList.aspx" ForeColor="White"><img src="img/peixun.png" width="54" height="46"></asp:HyperLink></p>
+                 <p  class="top21k_bg"><asp:HyperLink runat="server" NavigateUrl="~/rcList.aspx" ForeColor="White">就业培训</asp:HyperLink></p></td>
             <td width="15">&nbsp;</td>
             <td class="top23_bg"><p class="top21I_bg"><asp:HyperLink runat="server" NavigateUrl="~/newTypeRedirect.ashx?TypeId=57&ToolTip=人才计划" ForeColor="White"><img src="img/User.png" width="46" height="46"></asp:HyperLink></p>
                  <p  class="top21k_bg"><asp:HyperLink runat="server" NavigateUrl="~/newTypeRedirect.ashx?TypeId=57&ToolTip=人才计划" ForeColor="White">人才计划</asp:HyperLink></p></td>
@@ -699,7 +699,7 @@ $(".yx-rotaion").yx_rotaion({auto:true});
 
             <asp:Repeater ID="bottomAd" runat="server">
                 <ItemTemplate>
-                    <li _src="url(uploads/bottomSlider/<%#Eval("cPath").ToString()%>)"><a href="<%#Eval("cUrl").ToString()%>" target="_blank"></a></li>
+                    <li _src="url(uploads/bottomSlider/<%#Eval("cPath").ToString()%>)"><a href="javascript:void(0)" onclick="var cUrl='<%#Eval("cUrl").ToString()%>'; if (cUrl.indexOf('http')>=0 || cUrl.indexOf('www')>=0) {OpenUrl(cUrl);}"></a></li>
 			        
 			        </li>
                 </ItemTemplate>

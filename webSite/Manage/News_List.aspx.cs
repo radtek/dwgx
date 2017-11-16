@@ -39,10 +39,19 @@ public partial class Manage_News_List : System.Web.UI.Page
         reqTypeName = CommonClass.UrlEnCode(Request.QueryString["cTypeName"], System.Text.Encoding.UTF8);
 
         //如果类别表被标识为栏目类型(1)，则跳转到二级版面添加页面
-        string _existsStr = "select 1 from tb_NewsType where iDesc=1 and ID="+ reqTypeId;
-        if (DWGX.Data.SqlHelper.Exists(_existsStr))
+        if (string.IsNullOrEmpty(reqTypeId)== false)
+        { 
+            string _existsStr = "select 1  from tb_NewsType where iDesc=1 and ID="+ reqTypeId;
+            if (DWGX.Data.SqlHelper.Exists(_existsStr))
+            {
+                Response.Redirect("specialTypeList.aspx?TypeId=" + reqTypeId);
+                return;
+            }
+        }
+
+        if (reqTypeId == "56")
         {
-            Response.Redirect("specialTypeList.aspx?TypeId=" + reqTypeId);
+            Response.Redirect("RcList.aspx");
             return;
         }
 

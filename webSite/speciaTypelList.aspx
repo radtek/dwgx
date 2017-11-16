@@ -20,8 +20,10 @@
 <script type="text/javascript" charset="utf-8" id="kpyfx_js_id_10003317" src="//fxsjcj.kaipuyun.cn/count/10003317/10003317.js"></script>
 <!--加入统计信息 end-->
 
-<script src="js/jquery-2.0.3.min.js" type="text/javascript"></script>	
+<!--<script src="js/jquery-2.0.3.min.js" type="text/javascript"></script>	-->
+<script src="js/jquery-3.1.1.min.js" type="text/javascript"></script>	
 <script src="js/openUrlDialog.js" type="text/javascript"></script>
+<script src="js/speciaTypeList.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 
@@ -39,7 +41,6 @@ $(document).ready(function(){
 
 	});
 
-	
 
 });
 
@@ -198,8 +199,9 @@ function goTop(){
            <ul class="imglist"> 
               <asp:Repeater ID="rptNews" runat="server" >
                      <ItemTemplate>           
-                    <li>
-                        <a href="newTypeRedirect.ashx?TypeId=<%#Eval("ID").ToString()%>&ToolTip=<%#Eval("cTypeName").ToString()%>">
+                    <li>   
+                        
+                        <a href="<%#Eval("linkUrl").ToString() == "" ? "newTypeRedirect.ashx?TypeId="+Eval("ID").ToString()+"&ToolTip="+Eval("cTypeName").ToString()+"" : "javascript:void(0);OpenUrl('"+Eval("linkUrl").ToString()+"')"%>">
                             <img src="/uploads/SpecialImg/<%#Eval("cPic").ToString()%>"  onerror="this.src='img/dirdefault.jpg'"/>
                             <span><%#Eval("cTypeName").ToString()%></span>
 
@@ -293,7 +295,7 @@ function goTop(){
 
             <asp:Repeater ID="bottomAd" runat="server">
                 <ItemTemplate>
-                    <li _src="url(uploads/bottomSlider/<%#Eval("cPath").ToString()%>)"><a href="<%#Eval("cUrl").ToString()%>" target="_blank"></a></li>
+                    <li _src="url(uploads/bottomSlider/<%#Eval("cPath").ToString()%>)"><a href="javascript:void(0)" onclick="var cUrl='<%#Eval("cUrl").ToString()%>'; if (cUrl.indexOf('http')>=0 || cUrl.indexOf('www')>=0) {OpenUrl(cUrl);}"></a></li>
 			        
 			        </li>
                 </ItemTemplate>
@@ -379,7 +381,7 @@ $(".fullSlide").slide({
       <table width="100%" height="66" border="0" cellpadding="0" cellspacing="0" align="right">
         <tr>
           
-          <td width="9%"><img src="images/2wm.png" width="100" height="100"></td>
+          <td width="9%"><img  src="images/2wm.png" width="100" height="100"></td>
             <td width="9%"><a href="javascript:void(0)" onclick="OpenUrl('http://bszs.conac.cn/sitename?method=show&id=33B99A8643E24B72E053022819AC32CC')"><img src="images/red.png" width="80" height="80"></a></td>
           
           <td width="9%"><a href="javascript:void(0)" onclick="OpenUrl('http://121.43.68.40/exposure/jiucuo.html?site_code=4412910008&url=http%3A%2F%2Fwww.zqgx.gov.cn%2F')"><img src="images/jiucuo.png" width="110" height="55"></a></td>
@@ -416,6 +418,9 @@ $(".fullSlide").slide({
 	</ul>
 
 </div>
+
+   
+
 <script type="text/javascript">
 
         
@@ -437,7 +442,12 @@ $(".fullSlide").slide({
             location.href = "./class.aspx?seekStr=" + $("#findText").val() + "&ToolTip=搜索结果";
             //  location.href = "News_List.aspx?seekStr="+$("#findText").val();
         }
+        
+               
     </script>
+
+
+
 </body>
 </html>
 

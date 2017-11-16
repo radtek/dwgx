@@ -96,7 +96,10 @@
                                                             <td width="18%" align="center">
                                                                 <img src="images/index1_68.gif" width="11" height="14" /></td>
                                                             <td width="82%">
+                                                                <!--特殊跳转处理-->
+                                                      
                                                                 <asp:HyperLink ID="myNewTypelink" runat="server" Target="Main" NavigateUrl='<%#"News_List.aspx?Name="+System.Web.HttpUtility.UrlEncode(Eval("cTypeName").ToString(),System.Text.Encoding.UTF8)+"&TypeId="+Eval("ID").ToString()%>'><%#Eval("cTypeName").ToString() %>   </asp:HyperLink>
+                                                                
                                                             </td>
                                                         </tr>
                                                     </ItemTemplate>

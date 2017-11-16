@@ -284,7 +284,7 @@ function goTop(){
 
             <asp:Repeater ID="bottomAd" runat="server">
                 <ItemTemplate>
-                    <li _src="url(uploads/bottomSlider/<%#Eval("cPath").ToString()%>)"><a href="<%#Eval("cUrl").ToString()%>" target="_blank"></a></li>
+                    <li _src="url(uploads/bottomSlider/<%#Eval("cPath").ToString()%>)"><a href="javascript:void(0)" onclick="var cUrl='<%#Eval("cUrl").ToString()%>'; if (cUrl.indexOf('http')>=0 || cUrl.indexOf('www')>=0) {OpenUrl(cUrl);}"></a></li>
 			        
 			        </li>
                 </ItemTemplate>
