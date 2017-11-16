@@ -1494,7 +1494,7 @@ ul.videolist li span{ margin-left:30px; display:block; width:95%; height:30px; l
 ul.imglist{ margin:0px auto; width:1065px; overflow:hidden}
 ul.imglist li{ float:left; padding:4px 8px; width:200px ; list-style-type:none;}
 ul.imglist li img{ display:block; width:200px; height:130px; padding-left:20px;}
-ul.imglist li span{ margin-left:20px; display:block; width:98%; height:30px; line-height:30px; background:#F6F6F6; font-size:14px; text-align:center; }
+ul.imglist li span{ margin-left:20px; display:block; width:98%; height:30px; line-height:30px; background:#F6F6F6; font-size:13px; text-align:center; }
 
 .top-date{
 	color:#000;

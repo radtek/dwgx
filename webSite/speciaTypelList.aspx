@@ -187,7 +187,7 @@ function goTop(){
 <section  class="container features">
    <table width="100%" border="0" cellspacing="0" cellpadding="0">
      <tr>
-    <td colspan="3" class="top3lk_ohter1">当前位置：<a href="index.aspx">网站首页</a> > <%=Request.QueryString["ToolTip"]%></td>
+    <td colspan="3" class="top3lk_ohter1">当前位置：<a href="index.aspx">网站首页</a> > <%=toolTipUrl%></td>
   </tr>
   <tr>
     <th width="8%" scope="row">&nbsp;</th>
@@ -310,7 +310,7 @@ function goTop(){
   
 <div class="h-wtbz">
 
-    <p>    
+    <%--<p>    
         <a href="javascript:void(0)" onclick="OpenUrl('http://www.zqgxjjjc.gov.cn/')" style="margin: 0 10px;"  >区纪检监察网</a>
                     
                 
@@ -334,7 +334,7 @@ function goTop(){
             <a href="javascript:void(0)" onclick="OpenUrl('http://www.zqhzsafety.gov.cn/')"  style="margin: 0 10px;">区安全监管网</a>
               
         <a href="javascript:void(0)" onclick="OpenUrl('http://www.zqdwedu.com/webschool/News/')"  style="margin: 0 10px;">区教育信息网</a>
-    </p>
+    </p>--%>
 </div>
   
 <script type="text/javascript">

@@ -13,6 +13,7 @@ public partial class _class : System.Web.UI.Page
     public string reqTypeName;
     public string reqSeekTitle;
     public int recordCount;
+    public string toolTipUrl;
 
     private string toolTip="";
 
@@ -27,7 +28,10 @@ public partial class _class : System.Web.UI.Page
         reqSeekTitle = Request.QueryString["seekStr"];
 
         if (Request.QueryString["ToolTip"] != null)
-            toolTip = Request.QueryString["ToolTip"];
+            toolTipUrl = Request.QueryString["ToolTip"];
+
+        if (!string.IsNullOrEmpty(reqTypeId))
+          GetToolTipUrl(int.Parse(reqTypeId));
 
 
         string whereStr = " where 1=1";
@@ -109,6 +113,36 @@ public partial class _class : System.Web.UI.Page
         bottomAd.DataSource = _dsBottomAd;
         bottomAd.DataBind();
 
+    }
+
+    public void GetToolTipUrl(int typeId)
+    {
+        //创建ToolTip
+        bool loop = true;
+        int _reqTypeId = typeId;
+        toolTipUrl = "";
+        List<string> arryToolTip = new List<string>();
+        do
+        {
+            string sqlStr = "select id,cTypeName,parentid from tb_NewsType where id=" + _reqTypeId;
+            DataSet ds = DWGX.Data.SqlHelper.Query(sqlStr);
+            if (ds != null && ds.Tables[0].Rows.Count > 0)
+            {
+                if (int.Parse(ds.Tables[0].Rows[0]["parentid"].ToString()) >=0)
+                {
+                    if (_reqTypeId == typeId)
+                        toolTipUrl = ds.Tables[0].Rows[0]["cTypeName"].ToString();
+                    else
+                        toolTipUrl = "<a href=\"newTypeRedirect.ashx?TypeId=" + ds.Tables[0].Rows[0]["id"].ToString() + "\">"+ ds.Tables[0].Rows[0]["cTypeName"].ToString() + "</a>" + ">"+ toolTipUrl;
+                    _reqTypeId = int.Parse(ds.Tables[0].Rows[0]["parentid"].ToString());
+                }
+                else
+                    loop = false;
+            }
+            else
+                loop = false;
+        }
+        while (loop == true);
     }
 
 
