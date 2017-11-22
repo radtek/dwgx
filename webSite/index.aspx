@@ -496,7 +496,7 @@ $(".yx-rotaion").yx_rotaion({auto:true});
                  <tr>
                     
                     <td><img src="img/arrow_small_black.gif" width="10" height="10"><a href="NewDetail.aspx?id=<%#Eval("ID").ToString()%>"><%#CommonClass.GetString(Eval("cTitle").ToString(),40,"...")%></a> </td>
-                    <td class="top25_text">[ <%#DateTime.Parse(Eval("dCreateTime").ToString().Substring(0,9)).ToString("yyyy-MM-dd")%>]</td>
+                    <td class="top25_text">[ <%#DateTime.Parse(Eval("dCreateTime").ToString()).ToString("yyyy-MM-dd")%>]</td>
                   </tr>
               </ItemTemplate>
           </asp:Repeater>

@@ -203,7 +203,7 @@ function goTop(){
                 <ItemTemplate>   
                     <%if (string.IsNullOrEmpty(reqSeekTitle) == false || int.Parse(reqTypeId) != 45) { %>
                         <tr>
-                           <td><img src="img/arrow_small_black.gif" width="10" height="10"><a target="_blank" href="NewDetail.aspx?id=<%#Eval("ID").ToString()%>"><%#CommonClass.GetString(Eval("cTitle").ToString(),103,"...")%></a>  <%if (string.IsNullOrEmpty(reqSeekTitle) == false) { %>【<%#Eval("cTypeName").ToString()%>】<%} %></td>
+                           <td><img src="img/arrow_small_black.gif" width="10" height="10"><a target="_blank" href="NewDetail.aspx?id=<%#Eval("ID").ToString()%>"><%#CommonClass.GetString(Eval("cTitle").ToString(),90,"...")%></a>  <%if (string.IsNullOrEmpty(reqSeekTitle) == false) { %>【<%#Eval("cTypeName").ToString()%>】<%} %></td>
                            <td class="top25A_text">[<%#DateTime.Parse(Eval("dCreateTime").ToString()).ToString("yyyy-MM-dd")%>]</td>
                        </tr>
                     <%}
