@@ -5,7 +5,7 @@
     <section class="container features">
         <table width="100%" border="0" cellspacing="0" cellpadding="0">
             <tr>
-                <td colspan="3" class="top3lk_ohter1">当前位置：<a href="index.aspx">网站首页</a> > 就业培训</td>
+                <td colspan="3" class="top3lk_ohter1">当前位置：<a href="index.aspx">网站首页</a> > 求职招聘</td>
             </tr>
             <tr>
 

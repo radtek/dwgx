@@ -40,11 +40,6 @@ $(document).ready(function(){
 	});
 
 
-    //获取政声数据
-	$.ajax{
-
-	}
-
 
     
 });
@@ -104,9 +99,9 @@ var url = document.URL,
     clientType = TRS.getClientType();
 
 if(clientType == 'Mobile'){
-    //如果跳转到移动主张，这里就写主站的访问地址，例如：location.href="wap.zqgx.gov.cn";
+    //如果跳转到移动主张，这里就写主站的访问地址，例如：location.href="http://wap.zqgx.gov.cn";
     //location.href = url.split(".html")[0]+'/mobile/index.html';
-    location.href="wap.zqgx.gov.cn"; 
+    location.href = "http://wap.zqgx.gov.cn";
 }else if(clientType == 'PC'){
 }
 
@@ -325,7 +320,7 @@ $(".yx-rotaion").yx_rotaion({auto:true});
     <asp:Repeater ID="rptDwNews" runat="server" >
         <ItemTemplate>
           <tr>
-            <td class="top20_text"><%#DateTime.Parse(Eval("dCreateTime").ToString().Substring(0,9)).ToString("yyyy-MM-dd")%>  | </td>
+            <td class="top20_text"><%#DateTime.Parse(Eval("dCreateTime").ToString()).ToString("yyyy-MM-dd")%>  | </td>
             <td><a href="NewDetail.aspx?id=<%#Eval("ID").ToString()%>"><%#CommonClass.GetString(Eval("cTitle").ToString(),48,"...")%></a></td>
           </tr>
         </ItemTemplate>
@@ -636,10 +631,10 @@ $(".yx-rotaion").yx_rotaion({auto:true});
                  <p  class="top21k_bg"><asp:HyperLink runat="server" NavigateUrl="~/newTypeRedirect.ashx?TypeId=55&ToolTip=人才政策" ForeColor="White">人才政策</asp:HyperLink></p></td>
             <td width="16">&nbsp;</td>
             <td width="176" class="top22_bg"><p class="top21I_bg"><asp:HyperLink runat="server" NavigateUrl="~/rcList.aspx" ForeColor="White"><img src="img/peixun.png" width="54" height="46"></asp:HyperLink></p>
-                 <p  class="top21k_bg"><asp:HyperLink runat="server" NavigateUrl="~/rcList.aspx" ForeColor="White">就业培训</asp:HyperLink></p></td>
+                 <p  class="top21k_bg"><asp:HyperLink runat="server" NavigateUrl="~/rcList.aspx" ForeColor="White">求职招聘</asp:HyperLink></p></td>
             <td width="15">&nbsp;</td>
-            <td class="top23_bg"><p class="top21I_bg"><asp:HyperLink runat="server" NavigateUrl="~/newTypeRedirect.ashx?TypeId=57&ToolTip=人才计划" ForeColor="White"><img src="img/User.png" width="46" height="46"></asp:HyperLink></p>
-                 <p  class="top21k_bg"><asp:HyperLink runat="server" NavigateUrl="~/newTypeRedirect.ashx?TypeId=57&ToolTip=人才计划" ForeColor="White">人才计划</asp:HyperLink></p></td>
+            <td class="top23_bg"><p class="top21I_bg"><asp:HyperLink runat="server" NavigateUrl="~/newTypeRedirect.ashx?TypeId=57&ToolTip=信息公告" ForeColor="White"><img src="img/User.png" width="46" height="46"></asp:HyperLink></p>
+                 <p  class="top21k_bg"><asp:HyperLink runat="server" NavigateUrl="~/newTypeRedirect.ashx?TypeId=57&ToolTip=信息公告" ForeColor="White">信息公告</asp:HyperLink></p></td>
   </tr>
 </table></td>
       </tr>
@@ -708,40 +703,18 @@ $(".yx-rotaion").yx_rotaion({auto:true});
 			
 		</ul>
 	</div>
-	
+	 
 	<span class="prev"></span>
 	<span class="next"></span>
 </div><!--fullSlide end-->
 
-<div class="h-wtbz">
 
-    <%--<p>    
-        <a href="javascript:void(0)" onclick="OpenUrl('http://www.zqgxjjjc.gov.cn/')" style="margin: 0 10px;"  >区纪检监察网</a>
-                    
-                
-        <a href="javascript:void(0)" onclick="OpenUrl('http://www.job0758.com.cn/V3/')" style="margin: 0 10px;">区人才网</a>
-                    
-                
-        <a href="javascript:void(0)" onclick="OpenUrl('http://www.zqhtmse.com/gd/index.asp')" style="margin: 0 10px;">区中小企业网</a>
-                    
-                
-        <a href="javascript:void(0)" onclick="OpenUrl('http://www.zqhzepb.gov.cn/')" style="margin: 0 10px;">区环保局门户网</a>
-                    
-                
-        <a href="javascript:void(0)" onclick="OpenUrl('http://www.padw.gov.cn/')"  style="margin: 0 10px;">肇庆平安大旺</a>
-                    
-                
-        <a href="javascript:void(0)" onclick="OpenUrl('http://www.zqhzst.gov.cn/')" style="margin: 0 10px;">区科技信息网</a>
-                    
-                
-        <a href="javascript:void(0)" onclick="OpenUrl('http://www.gxld.gov.cn/')" style="margin: 0 10px;">区劳动和社会保障局</a>
-                    
-            <a href="javascript:void(0)" onclick="OpenUrl('http://www.zqhzsafety.gov.cn/')"  style="margin: 0 10px;">区安全监管网</a>
-              
-        <a href="javascript:void(0)" onclick="OpenUrl('http://www.zqdwedu.com/webschool/News/')"  style="margin: 0 10px;">区教育信息网</a>
-    </p>--%>
+<div class="gxfwqd">
+	<div class="bd">
+        <a href="javascript:void(0)" onclick="OpenUrl('http://wsbs.zhaoqing.gov.cn/portal/website/govpublic/govpublic!findFwsxByDept.action?areacode=441285')"><img src="Images/gxfwqd.gif" /></a>
+    </div>
 </div>
-  
+
   
 <script type="text/javascript">
 $(".fullSlide").hover(function(){
@@ -828,7 +801,7 @@ $(".fullSlide").slide({
 <script type="text/javascript">
 
         
-        var content1 = "<img width='290' height='290' src='images/2wm.png' />";//弹出图片
+        var content1 = "<img width='290' height='290' src='images/21wm.png' />";//弹出图片
 
         T$('click_test1').onclick = function () { TINY.box.show(content1, 0, 0, 0, 1) }
         T$('dwChat').onclick = function () { TINY.box.show(content1, 0, 0, 0, 1) }

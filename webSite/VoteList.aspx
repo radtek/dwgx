@@ -410,7 +410,7 @@ $(".fullSlide").slide({
 <script type="text/javascript">
 
         
-        var content1 = "<img width='290' height='290' src='images/2wm.png' />";//弹出图片
+        var content1 = "<img width='290' height='290' src='images/21wm.png' />";//弹出图片
 
         T$('click_test1').onclick = function(){TINY.box.show(content1,0,0,0,1)}
 		
