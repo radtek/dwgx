@@ -296,33 +296,10 @@ function goTop(){
 	<span class="next"></span>
 </div><!--fullSlide end-->
   
-<div class="h-wtbz">
-
-   <%-- <p>    
-        <a href="javascript:void(0)" onclick="OpenUrl('http://www.zqgxjjjc.gov.cn/')" style="margin: 0 10px;"  >区纪检监察网</a>
-                    
-                
-        <a href="javascript:void(0)" onclick="OpenUrl('http://www.job0758.com.cn/V3/')" style="margin: 0 10px;">区人才网</a>
-                    
-                
-        <a href="javascript:void(0)" onclick="OpenUrl('http://www.zqhtmse.com/gd/index.asp')" style="margin: 0 10px;">区中小企业网</a>
-                    
-                
-        <a href="javascript:void(0)" onclick="OpenUrl('http://www.zqhzepb.gov.cn/')" style="margin: 0 10px;">区环保局门户网</a>
-                    
-                
-        <a href="javascript:void(0)" onclick="OpenUrl('http://www.padw.gov.cn/')"  style="margin: 0 10px;">肇庆平安大旺</a>
-                    
-                
-        <a href="javascript:void(0)" onclick="OpenUrl('http://www.zqhzst.gov.cn/')" style="margin: 0 10px;">区科技信息网</a>
-                    
-                
-        <a href="javascript:void(0)" onclick="OpenUrl('http://www.gxld.gov.cn/')" style="margin: 0 10px;">区劳动和社会保障局</a>
-                    
-            <a href="javascript:void(0)" onclick="OpenUrl('http://www.zqhzsafety.gov.cn/')"  style="margin: 0 10px;">区安全监管网</a>
-              
-        <a href="javascript:void(0)" onclick="OpenUrl('http://www.zqdwedu.com/webschool/News/')"  style="margin: 0 10px;">区教育信息网</a>
-    </p>--%>
+<div class="gxfwqd">
+	<div class="bd">
+        <a href="javascript:void(0)" onclick="OpenUrl('http://wsbs.zhaoqing.gov.cn/portal/website/govpublic/govpublic!findFwsxByDept.action?areacode=441285')"><img src="Images/gxfwqd.gif" /></a>
+    </div>
 </div>
   
 <script type="text/javascript">
