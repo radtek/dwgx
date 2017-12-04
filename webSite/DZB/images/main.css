@@ -1,0 +1,43 @@
+@charset "gb2312";
+/* CSS Document */
+
+@charset "gb2312";
+/* CSS Document */
+
+body{font-size:12px; color:#333; background-image:url(list_bg.jpg); background-repeat:repeat-y; background-position:top center; background-color:#EFEFEF; margin:0px; padding:0px;}
+div,ul,li,p,form,input,h1,h2,h3,h4,h5{ margin:0px; padding:0px;}
+img{border:0px;}
+li{ list-style-type:none}
+.clear{height:0px;clear:both}
+/*通用链接样式*/
+a:link {text-decoration: none; color:#333}
+a:visited {text-decoration: none;color:#333}
+a:hover {text-decoration: none; color:#C00 }
+a:active {text-decoration: none;color:#333}
+/*黑色链接样式*/
+.black_link a:link {color: #000;}
+.black_link a:visited {color: #000;}
+.black_link a:hover {color: #C00;}
+.black_link a:active {color: #000;}
+.fl{ float:left;}
+.fr{ float:right}
+
+#main_cont{ margin:0px auto; width:980px;}
+
+.main_logo{ float:left; width:980px; height:95px;background-image:url(main_bg.jpg); background-repeat:repeat-x; padding-top:10px;}
+
+.review_list{ float:left; width:980px;}
+
+.review_list ul li{ float:left; width:115px; height:193px; margin:20px 0px 10px 41px; display:inline;}
+
+.review_list ul li p{ float:left; width:115px; height:168px;  background-color:#CCC;overflow:hidden}
+
+.review_list ul li p img{ width:115px; height:168px;}
+
+.review_list ul li span{ float:left; width:115px; text-align:center; line-height:20px; margin-top:5px;}
+
+
+#foter{float:left;  width:980px; background-color:#B10002; border-top:3px solid #900; padding:20px 0px 20px 0px; margin-top:20px;}
+
+.copyright{ margin:0px auto; text-align:center; width:980px; line-height:23px; color:#FFF; font-family:Arial, Helvetica, sans-serif}
+.copyright a{ color:#FFF;}

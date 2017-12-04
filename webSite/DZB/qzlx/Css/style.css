@@ -1,0 +1,168 @@
+﻿ 
+.Font_Blue a
+{
+	color:#1f2d6c;
+}
+
+.Link_666 a
+{
+	color:#663200;
+}
+
+.Link_ff66 a
+{
+	color:#ff6600;
+}
+
+.Border 
+{  
+        border-top:1px #b5b5b5 solid;
+  border-bottom:1px #b5b5b5 solid;
+    border-left:1px #b5b5b5 solid;
+      border-right:1px #b5b5b5 solid;
+}
+.Border2 {
+  border-bottom:1px #c8e2ea solid;
+    border-left:1px #c8e2ea solid;
+      border-right:1px #c8e2ea solid;
+  border-top:1px #c8e2ea solid;
+  }
+ .newbg 
+ {
+	background-image:url(/images/Index_51.jpg);
+	 background-repeat:repeat-x;
+	text-align:center;
+	line-height:32px;
+	cursor:hand;
+ }
+ 
+  .newbg2
+  {
+	text-align:center;
+	line-height:32px;
+	cursor:hand;
+	
+  }
+a:link{
+	 
+	text-decoration: none;
+}
+a:visited{
+ 
+ 
+	text-decoration: none;
+}
+a:hover{
+ 
+ 
+ 
+	text-decoration: underline;
+}
+
+.new45 ul{
+	margin-left:12px;
+}
+.new45 li{
+	float:left;
+	margin-right:2px;
+	margin-top:6px;
+	width:130px;
+}
+
+.Title 
+{
+    color:#666; font-size:14px;  font-weight:bold;
+}
+
+.toolbar
+{
+    vertical-align: middle;
+    background-image: url('/images/Menu_BG.JPG');
+    height:30px;
+    text-align:center;
+}
+
+
+.tbButtonUp
+{
+      border:0px;
+    height:26px;
+    height:26px;
+    padding-left: 0px;
+    padding-right: 0px;
+     background-position:left;
+    background-color:Transparent;
+    cursor:hand;
+   
+}
+.tbButtonDown
+{
+    border:0px;
+    height:26px;
+    padding-left: 0px;
+    padding-right: 0px;
+    background-image:url("/images/toolbtn_bg.gif");
+    background-position:left;
+    background-color:Transparent;
+    cursor:hand;
+}
+.tbButtonDisabled
+{
+    height:26px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+ 
+ 
+ 
+.Table_BG0
+{
+background-color:#ffffff; line-height:26px; text-align:center;
+}
+.Table_BG1
+{
+	background-color:#F7FAFF;line-height:26px;text-align:center;
+}
+
+.datePicker
+{
+    background-image:url('/datepicker/skin/datePicker.gif');
+    background-position:right;
+    background-repeat:no-repeat;
+    width: 160px;
+}
+
+.InputButton 
+{
+    height:27px;
+}
+
+
+  .MainBody
+  {
+      background-image:url(/images/Index_12.jpg); background-repeat:repeat-x;  background-color:#b3e3fd;
+      text-align:center;
+  }
+  
+  
+.ImageTextButton { BORDER-RIGHT: #999999 1px solid; PADDING-RIGHT: 3px; BACKGROUND-POSITION: 1px 1px; BORDER-TOP: #cccccc 1px solid;PADDING-BOTTOM: 3px; PADDING-TOP:3px; DISPLAY: inline-block; PADDING-LEFT: 22px;  FONT-SIZE: 12px;  MARGIN: 1px; BORDER-LEFT: #cccccc 1px solid; CURSOR: pointer; COLOR: #333333; LINE-HEIGHT: normal; BORDER-BOTTOM: #999999 1px solid; BACKGROUND-REPEAT: no-repeat; FONT-FAMILY: Arial, Helvetica; WHITE-SPACE: nowrap; BACKGROUND-COLOR: #eeeeee; TEXT-DECORATION: none;}
+.ImageTextButton:link { COLOR: black; TEXT-DECORATION: none }
+.ImageTextButton:visited { COLOR: black; TEXT-DECORATION: none }
+.ImageTextButton:active { COLOR: black; TEXT-DECORATION: none }
+.ImageTextButton:hover { CURSOR: pointer; COLOR: #666666; TEXT-DECORATION: none }
+
+.ButtonAdd {
+    background:#efefef url(/images/add.gif) no-repeat 4px
+}
+.ButtonDel {
+    background:#efefef url(/images/del.gif) no-repeat 4px
+}
+
+.DataBg0
+{
+    background-color: #fff;
+}
+.DataBg1
+{
+    background-color: #f7f7f7;
+}
