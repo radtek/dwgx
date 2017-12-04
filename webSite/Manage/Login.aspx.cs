@@ -34,7 +34,7 @@ public partial class AdminManage_Login : System.Web.UI.Page
             {
                 //调用CommonClass类中的checkLogin方法，判断用户是否为合法用户
                 int IntUserIn = CC.checkLogin(txtAdminName.Text.Trim(), txtAdminPwd.Text.Trim());
-                if (IntUserIn > 0)
+                if (IntUserIn >= 0)
                 {
 
                     //更新登录数据

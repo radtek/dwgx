@@ -205,7 +205,7 @@ function goTop(){
        
   <tr >
     
-    <td  colspan="3" class="top2lk_ohter"><asp:Label ID="newSource" runat="server">dfdfddfdf</asp:Label></td>
+    <td  colspan="3" class="top2lk_ohter"><asp:Label ID="newSource" runat="server"></asp:Label></td>
     <td>&nbsp;</td>
   </tr>
        

@@ -44,9 +44,15 @@ public partial class NewDetail : System.Web.UI.Page
             DWGX.Model.NewsType _newType = new DWGX.BLL.NewsType().GetModel(_new.iTypeId == null ? 0 : (int)_new.iTypeId);
             if (_newType != null)
             {
-                navTitle.Text = string.Format("<a href=\"class.aspx?TypeId={0}&toolTip={1}\">{2}</a>", _newType.ID,_newType.cTypeName, _newType.cTypeName);
+                navTitle.Text = string.Format("<a href=\"class.aspx?TypeId={0}&toolTip={1}\">{2}</a>", _newType.ID, _newType.cTypeName, _newType.cTypeName);
             }
         }
+        else
+        {
+            Response.Redirect("pageerror.html");
+            newSource.Text = "";
+        }
+           
 
         //底部轮播图片
         DataSet _dsBottomAd = new DWGX.BLL.BottomAd().GetList("1=1");
